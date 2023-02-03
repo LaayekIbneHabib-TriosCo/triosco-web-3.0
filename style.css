@@ -187,7 +187,7 @@ header ul li a span {
   transition: 0.1s ease-in-out;
 }
 
-.nav ul li img:hover {
+.nav ul li img:active {
   transform: scale(0.85);
 }
 
@@ -393,15 +393,15 @@ section {
 }
 
 .section-4 .slide .item:first-of-type {
-  background-image: url("/resources/images/1.jpg");
+  background-image: url("/resources/images/Branding\ 1.jpg");
 }
 
 .section-4 .slide .item:nth-of-type(2) {
-  background-image: url("/resources/images/2.jpg");
+  background-image: url("/resources/images/Media\ 1.jpg");
 }
 
 .section-4 .slide .item:last-of-type {
-  background-image: url("/resources/images/3.jpg");
+  background-image: url("/resources/images/Web\ 1.jpg");
 }
 
 .services .slide .item h1 {
@@ -624,7 +624,6 @@ section {
 
 .section-8 div {
   width: calc(100% - 20rem);
-  /* background-color: tomato; */
   padding: 2rem;
 }
 
@@ -657,6 +656,19 @@ section {
   font-size: 2rem;
   color: var(--brown);
   margin-top: 5rem;
+}
+
+.section-8 div ul {
+  list-style: none;
+  padding: 7rem;
+}
+
+.section-8 div ul li {
+  display: inline-block;
+}
+
+.section-8 div ul li img {
+  width: 25rem;
 }
 
 @media all and (max-width: 900px) {
