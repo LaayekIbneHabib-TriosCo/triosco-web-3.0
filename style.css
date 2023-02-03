@@ -609,10 +609,6 @@ section {
     cursor: pointer;
     margin: 2rem;
   }
-
-  .blog-cards .card a {
-    display: none;
-  }
 }
 
 /* SECTION 8 */
