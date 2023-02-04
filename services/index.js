@@ -58,7 +58,9 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
+  /* SHREYA'S CODE START */
   slides[slideIndex - 1].style.display = "flex";
+  /* SHREYA'S CODE END */
   dots[slideIndex - 1].className += " active";
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }

@@ -48,6 +48,7 @@
     rgba(255, 253, 245, 0.95) 100%
   );
 }
+
 /* END */
 
 ::selection {
@@ -167,6 +168,7 @@ header ul li a span {
   0% {
     margin-left: -100px;
   }
+
   100% {
     margin-left: 0px;
   }
@@ -252,15 +254,15 @@ section {
 }
 
 .create .slide .item-1 {
-  background-image: url("/resources/images/1A.jpg");
+  background-image: url("/resources/images/Branding\ 2.jpg");
 }
 
 .create .slide .item-2 {
-  background-image: url("/resources/images/2A.jpg");
+  background-image: url("/resources/images/Media\ 2.jpg");
 }
 
 .create .slide .item-3 {
-  background-image: url("/resources/images/3A.jpg");
+  background-image: url("/resources/images/Web\ 2.jpg");
 }
 
 .section .slide .item h1 {
@@ -289,7 +291,9 @@ section {
   transform: translate(-50%, -50%);
   background-color: var(--white);
   border-radius: 50%;
-  z-index: 1;
+  /* SHREYA'S CODE START */
+  z-index: 999;
+  /* SHREYA'S CODE START */
 }
 
 .section .slide .item .wrapper .content {
@@ -342,6 +346,7 @@ section {
     padding-top: 0rem;
   }
 }
+
 /* END */
 
 /*  */
@@ -353,9 +358,8 @@ section {
 .container {
   position: relative;
   text-align: center;
-  
-   
   /* SHREYA'S CODE STARTS */
+
   /* width: 59rem; */
   padding-top: 50px;
   width: 75%;
@@ -365,88 +369,62 @@ section {
   /* height: 100vh;
   max-width: 75%;
   max-height: 50%; */
-  
+
   /* SHREYA'S CODE ENDS */
-  
   display: block;
   margin: auto;
 }
 
- /* SHREYA'S CODE STARTS */
+/* SHREYA'S CODE STARTS */
 .mySlides {
   display: none;
   cursor: pointer;
   position: relative;
-  /* background-color: red; */
+  overflow: hidden;
 }
 
-.mySlides .myPrevSlide img{
+.mySlides .myPrevSlide img {
   width: 50rem;
   margin-left: -7rem;
   height: 100%;
-  box-shadow:rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  /* box-shadow:rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
 }
 
-.mySlides .myPrevSlide{
+.mySlides .myPrevSlide {
   width: 25%;
   opacity: 0.4;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(193, 154, 154, 0.3) 0px 18px 36px -18px inset;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(193, 154, 154, 0.3) 0px 18px 36px -18px inset; */
   transform: translate3d(-50px, 0, 0);
-  transform: translatex(10%) scale(.8);
- 
+  transform: translatex(10%) scale(0.8);
 }
 
-.prev{
-  left:0;
-}
-
-.mySlides .myNextSlide{
+.mySlides .myNextSlide {
   width: 25%;
   opacity: 0.4;
-  transform: translatex(-50%) scale(.8);
+  transform: translatex(-15%) scale(0.8);
   transform: translate3d(10px, 2, 0);
- 
- 
 }
 
-.mySlides .myNextSlide img{
+.mySlides .myNextSlide img {
   width: 45rem;
   height: 100%;
+  object-fit: cover;
 }
 
-.mySlides .mySlideActive{
+.mySlides .mySlideActive {
   z-index: 99;
   height: auto;
   max-width: 100%;
 }
 
-.mySlides .mySlideActive img{
+.mySlides .mySlideActive img {
   vertical-align: middle;
   width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.70) 0px 3px 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   z-index: 99;
   height: 100%;
 }
-
-/* @media all and (max-width: 900px) {
-  .container {
-    width: 35rem;
-  }
-
-  .brand-images-for-desktop {
-    display: none;
-  }
-
-  .brand-images-for-mobile {
-    display: block;
-  }
-} */
-
-/* .prev{
-  margin-top: 30px;
-  display: none;
-} */
-/* SHREYA'S CODE ENDS */
 
 .mySlides img {
   vertical-align: middle;
@@ -454,6 +432,15 @@ section {
 
 .cursor {
   cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0px;
+  border-radius: 3px 0 0 3px;
 }
 
 .prev,
@@ -473,11 +460,6 @@ section {
   -webkit-user-select: none;
 }
 
-.next {
-  right: 0px;
-  border-radius: 3px 0 0 3px;
-}
-
 .prev:hover,
 .next:hover {
   background-color: var(--yellow);
@@ -495,10 +477,6 @@ section {
 }
 
 .caption-container {
-  /* SHREYA'S CODE STARTS */
-  /* background-color: var(--yellow);
-  padding: 2px 16px; */
-  /* SHREYA'S CODE ENDS */
   color: var(--white);
 }
 
@@ -554,76 +532,124 @@ section {
   }
 }
 
-@media only screen and (min-width: 901px) and (max-width: 1200px){
-  .mySlides .myPrevSlide{
-    width: 20%;
+@media only screen and (min-width: 1260px) and (max-width: 1600px) {
+  .mySlides .myNextSlide {
+    transform: translatex(-56%) scale(0.8);
+    transform: translate3d(10px, 2, 0);
+  }
+}
+
+@media only screen and (min-width: 1601px) and (max-width: 1800px) {
+  .mySlides .myNextSlide {
+    transform: translatex(-39%) scale(0.8);
+    transform: translate3d(10px, 2, 0);
+  }
+}
+
+@media only screen and (min-width: 1801px) and (max-width: 2000px) {
+  .mySlides .myNextSlide {
+    transform: translatex(-21%) scale(0.8);
+    transform: translate3d(10px, 2, 0);
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  .mySlides .myPrevSlide {
+    width: 15%;
   }
 
-  .mySlides .myNextSlide{
-    width: 20%;
+  .mySlides .myNextSlide {
+    width: 15%;
   }
 
-  .mySlides .mySlideActive{
-    width: 60%;
+  .mySlides .mySlideActive {
+    width: 70%;
   }
+
   .mySlides .myNextSlide img {
     width: 43rem;
     height: 100%;
-}
-}
-
-@media all and (max-width: 900px) {
-  .container {
-    /* width: 35rem; */
-    width:100%;
-    height: 100vh;
+    object-fit: cover;
   }
 
-  .mySlides{
+  .container {
+    overflow: hidden;
+  }
+
+  .section .slide .item .wrapper .content {
+    scroll-snap-align: center;
+    height: calc(100vh - 9.3rem);
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .section .slide .item .wrapper .back-button {
+    width: 4rem;
+    position: sticky;
+    top: 7%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    border-radius: 50%;
+    z-index: 999;
+  }
+
+  .mySlides .myNextSlide {
+    transform: translatex(-236%) scale(0.8);
+  }
+}
+
+@media all and (max-width: 600px) {
+  .container {
+    /* width: 35rem; */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .mySlides {
     margin-top: 5rem;
   }
 
-  .mySlides .myNextSlide img{
-    width: 10rem;
+  .mySlides .myNextSlide {
+    transform: translatex(-260%) scale(0.8);
+  }
+
+  .mySlides .myNextSlide img {
+    width: 30rem;
+    height: 90%;
+    object-fit: cover;
+  }
+
+  .mySlides .myPrevSlide {
+    width: 15%;
+  }
+
+  .mySlides .myNextSlide {
+    width: 15%;
+  }
+
+  .mySlides .myPrevSlide img {
+    width: 30rem;
+    height: 90%;
+    margin-left: -25px;
+    object-fit: contain;
+  }
+
+  .mySlides .mySlideActive {
+    width: 70%;
     height: 100%;
   }
 
-  .mySlides .myPrevSlide{
-    width: 10%;
-  }
-
-  .mySlides .myNextSlide{
-    width: 10%;
-  }
-
-  .mySlides .myPrevSlide img{
-    width: 10rem;
+  .mySlides .mySlideActive img {
     height: 100%;
-    margin-left: 0px;
+    object-fit: contain;
   }
 
-  .mySlides .mySlideActive{
-    width: 80%;
-    height: 45rem;
-  }
-
-  .mySlides .mySlideActive img{
-    height: 44rem;
-  }
-
-  .container{
+  .container {
     width: 100%;
   }
-
-
-  /* SHREYA'S CODE STARTS */
-  /* .mySlideActive{
-    width:100%;
-
-  } */
-
-
-  /* SHREYA'S CODE ENDS */
 
   .brand-images-for-desktop {
     display: none;
@@ -632,16 +658,77 @@ section {
   .brand-images-for-mobile {
     display: block;
   }
+
+  .prev,
+  .next {
+    top: 29%;
+  }
 }
 
-/* @media all and (max-width: 1043px){
-  .mySlides .myNextSlide img{
-     margin-left: -50rem;
-
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .mySlides .myNextSlide {
+    transform: translatex(-85%) scale(0.8);
+    transform: translate3d(10px, 2, 0);
   }
-  .mySlides .mySlideActive img{
-    margin: 5rem 10rem;
 
- }
- 
-} */
+  .container {
+    /* width: 35rem; */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .mySlides {
+    margin-top: 5rem;
+  }
+
+  .mySlides .myNextSlide img {
+    width: 30rem;
+    height: 90%;
+    object-fit: contain;
+  }
+
+  .mySlides .myPrevSlide {
+    width: 15%;
+  }
+
+  .mySlides .myNextSlide {
+    width: 15%;
+  }
+
+  .mySlides .myPrevSlide img {
+    width: 30rem;
+    height: 90%;
+    margin-left: -25px;
+    object-fit: contain;
+  }
+
+  .mySlides .mySlideActive {
+    width: 70%;
+    height: 100%;
+  }
+
+  .mySlides .mySlideActive img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .brand-images-for-desktop {
+    display: none;
+  }
+
+  .brand-images-for-mobile {
+    display: block;
+  }
+
+  .prev,
+  .next {
+    top: 35%;
+  }
+}
+
+/* SHREYA'S CODE ENDS */
