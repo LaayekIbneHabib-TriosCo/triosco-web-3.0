@@ -65,7 +65,7 @@
 html,
 body {
   overflow-x: hidden;
-  background-image: url(/resources/images/background.png);
+  /* background-image: url(/resources/images/background.png); */
 }
 
 .disclamer {
@@ -157,7 +157,7 @@ header ul li a span {
   position: absolute;
   margin-top: 6rem;
   height: calc(100vh - 6rem);
-  width: 10rem;
+  width: 7rem;
   overflow-x: hidden;
   overflow-y: scroll;
   z-index: 2;
@@ -174,10 +174,17 @@ header ul li a span {
   }
 }
 
+.nav ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+}
+
 .nav ul li {
-  font-size: 6rem;
   text-align: center;
-  line-height: 10rem;
+  line-height: 7rem;
 }
 
 .nav ul li:nth-child(8) {
@@ -185,11 +192,11 @@ header ul li a span {
 }
 
 .nav ul li img {
-  width: 3rem;
+  width: 2.2rem;
 }
 
 .nav ul li .dot {
-  width: 1rem;
+  width: 0.8rem;
 }
 
 @media all and (min-width: 900px) {
@@ -236,13 +243,12 @@ section {
 .section {
   display: flex;
   justify-content: flex-end;
-  justify-content: center;
 }
 
 .section .slide {
   display: flex;
   flex-direction: row;
-  width: calc(100% - 20rem);
+  width: calc(100% - 7rem);
 }
 
 .section .slide .item {
@@ -304,6 +310,17 @@ section {
   overflow-y: scroll;
 }
 
+.section .slide .item .wrapper .content h2 {
+  font-size: 4rem;
+  font-family: var(--secondary-font);
+  font-style: italic;
+  text-shadow: 2px 5px 1px var(--text-shadow);
+  color: var(--brown);
+  font-weight: 700;
+  line-height: 4.5rem;
+  margin-bottom: 2rem;
+}
+
 .section .slide .item .wrapper .content:first-of-type {
   width: 50%;
   float: right;
@@ -315,15 +332,22 @@ section {
 }
 
 .section .slide .item .content:first-of-type p {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: var(--primary-font);
   color: var(--brown);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .section .slide .item .content:first-of-type p span {
   font-weight: 700;
   color: var(--yellow);
+}
+
+.service-list {
+  font-size: 2rem;
+  font-family: var(--primary-font);
+  color: var(--brown);
+  font-weight: 400;
 }
 
 @media all and (max-width: 900px) {
@@ -343,7 +367,7 @@ section {
 
   .section .slide .item .wrapper .content:first-of-type {
     width: 100%;
-    padding-top: 0rem;
+    padding-top: 5rem;
   }
 }
 

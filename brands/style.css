@@ -64,7 +64,7 @@
 html,
 body {
   overflow-x: hidden;
-  background-image: url(/resources/images/background.png);
+  /* background-image: url(/resources/images/background.png); */
 }
 
 .disclamer {
@@ -156,10 +156,10 @@ header ul li a span {
   position: absolute;
   margin-top: 6rem;
   height: calc(100vh - 6rem);
-  width: 10rem;
+  width: 7rem;
   overflow-x: hidden;
   overflow-y: scroll;
-  z-index: 2;
+  z-index: 1;
   animation: navAnimation 0.5s forwards;
 }
 
@@ -172,22 +172,30 @@ header ul li a span {
   }
 }
 
-.nav ul li {
-  font-size: 6rem;
-  text-align: center;
-  line-height: 10rem;
+.nav ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
 }
 
-.nav ul li:nth-child(8) {
-  margin-bottom: 5rem;
+.nav ul li {
+  text-align: center;
+  line-height: 7rem;
 }
 
 .nav ul li img {
-  width: 3rem;
+  width: 2.2rem;
+  transition: 0.1s ease-in-out;
+}
+
+.nav ul li img:active {
+  transform: scale(0.85);
 }
 
 .nav ul li .dot {
-  width: 1rem;
+  width: 0.8rem;
 }
 
 @media all and (min-width: 900px) {
@@ -283,6 +291,7 @@ section {
 /* SHREYA'S CODE START */
 .content {
   display: flex;
+  justify-content: space-between;
   column-gap: 3rem;
   padding-top: 3.5rem;
   color: var(--brown);
@@ -291,23 +300,25 @@ section {
 .content .brand-left,
 .content .grid-container {
   overflow-y: scroll;
+  width: 40%;
 }
 
 .brand-left {
   padding-left: 3rem;
   width: 40%;
   height: 100vh;
+  /* background-color: red; */
 }
 
 .brand-left .brand-heading {
   text-decoration-line: underline;
   /* border-bottom: 1rem solid var(--yellow); */
-  text-decoration-thickness: 1rem;
+  text-decoration-thickness: 0.5rem;
   text-decoration-color: var(--yellow);
 }
 
 .brand-heading {
-  font-size: 6rem;
+  font-size: 4rem;
   font-style: italic;
   font-family: var(--secondary-font);
   /* white-space: nowrap; */
@@ -315,15 +326,15 @@ section {
 }
 
 .brand-about {
-  font-size: 2.5rem;
-  margin-top: 5rem;
+  font-size: 2rem;
+  margin-top: 3rem;
   font-family: var(--primary-font);
 }
 
 .brand-about-content {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-top: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   font-family: var(--primary-font);
 }
 
@@ -444,8 +455,10 @@ section {
 .modal-img {
   width: auto;
   height: auto;
-  max-width: 100%;
-  max-height: 100%;
+  /* max-width: 100%;
+  max-height: 100%; */
+  max-width: 50%;
+  max-height: 50%;
 }
 
 .close {
