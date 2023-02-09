@@ -63,15 +63,42 @@ observer1.observe(section1);
 
 // SECTION TITLES
 const sections = [
-  { class: ".section-3", title: " | OUR STORY" },
-  { class: ".section-4", title: " | CREATE" },
-  { class: ".section-5", title: " | CONNECT" },
-  { class: ".section-6", title: " | TRANSCEND" },
-  { class: ".section-7", title: " | ABOUT OUR SERVICES" },
-  { class: ".section-8", title: " | BRANDS WE HAVE WORKED WITH" },
-  { class: ".section-9", title: " | THE TEAM" },
-  { class: ".section-10", title: " | OUR BLOGS" },
-  { class: ".section-11", title: " | CONTACT US" },
+  {
+    class: ".section-3",
+    title: " | ABOUT US",
+  },
+  {
+    class: ".section-4",
+    title: " | CREATE",
+  },
+  {
+    class: ".section-5",
+    title: " | CONNECT",
+  },
+  {
+    class: ".section-6",
+    title: " | TRANSCEND",
+  },
+  {
+    class: ".section-7",
+    title: " | ABOUT OUR SERVICES",
+  },
+  {
+    class: ".section-8",
+    title: " | OUR CLIENTS",
+  },
+  {
+    class: ".section-9",
+    title: " | OUR TEAM",
+  },
+  {
+    class: ".section-10",
+    title: " | OUR BLOGS",
+  },
+  {
+    class: ".section-11",
+    title: " | CONTACT US",
+  },
 ];
 
 sections.forEach((section, index) => {
@@ -80,8 +107,15 @@ sections.forEach((section, index) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           document.querySelector(".section-title").innerHTML = section.title;
+          //
+          icons.forEach((icon, i) => {
+            document.querySelector(icon).src =
+              i === index ? activeIcons[i] : inactiveIcons[i];
+          });
+          //
         } else {
           document.querySelector(".section-title").innerHTML = "";
+          document.querySelector(icons).src = inactiveIcons;
         }
       });
     },
