@@ -593,7 +593,39 @@ section {
 
 /* SECTION 8 */
 .section-8 {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.section-8 h2 {
+  font-size: 5rem;
+  font-family: var(--secondary-font);
+  font-style: italic;
+  text-shadow: 2px 5px 1px var(--text-shadow);
+  color: var(--brown);
+  font-weight: 500;
+}
+
+.section-8 div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-left: 2rem;
+}
+
+.section-8 .brand-logos ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+
+.section-8 .brand-logos ul li img {
+  width: 13rem;
 }
 /* END */
 
@@ -655,6 +687,38 @@ section {
   width: 25rem;
 }
 
+.team-member-heading {
+  background-color: var(--yellow);
+  width: 100%;
+  height: 3.8rem;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  color: var(--white);
+  font-size: 2.6rem;
+}
+
+.employer-heading {
+  color: var(--yellow);
+  font-family: var(--primary-font);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 5rem;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.employees-heading {
+  color: var(--yellow);
+  font-family: var(--primary-font);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 5rem;
+  font-style: italic;
+  font-weight: 800;
+}
+
 @media all and (max-width: 1300px) {
   .about-the-team {
     display: flex;
@@ -710,7 +774,7 @@ section {
 }
 
 .blogs h1 span {
-  font-size: 7rem;
+  font-size: 5rem;
 }
 
 .blog-cards {
@@ -798,7 +862,73 @@ section {
 /* END */
 
 /* SECTION 11 */
+
 .section-11 {
-  display: none;
+  display: flex;
+  justify-content: center;
+}
+
+.section-11 div {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  justify-content: center;
+}
+
+.section-11 div .contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+}
+
+.section-11 div .contact .video {
+  width: 50rem;
+}
+
+.section-11 div .contact .form {
+  font-family: var(--primary-font);
+  color: var(--yellow);
+}
+
+.section-11 div .contact .form h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.section-11 div .contact .form span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.section-11 div .contact .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 5rem;
+}
+
+.section-11 div .contact .form form input {
+  background: transparent;
+  border: none;
+  border-bottom: 0.1rem solid var(--yellow);
+  color: var(--brown);
+  outline: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  width: 50rem;
+}
+
+.section-11 div .contact .form form input:nth-child(4) {
+  height: 10rem;
+}
+
+.section-11 div .contact .form form input:last-of-type {
+  background-color: var(--yellow);
+  height: 4rem;
+  width: 10rem;
+  color: var(--white);
 }
 /* END */
