@@ -364,9 +364,9 @@ section {
 }
 
 .section-3 div article {
-  height: 45rem;
+  height: 60rem;
   width: 70rem;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .section-3 div article h1 {
@@ -400,6 +400,7 @@ section {
 .section-3 div article ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 5rem;
 }
 
@@ -559,29 +560,29 @@ section {
 
 /* SECTION 5 */
 .section-5 .slide .item:first-of-type {
-  background-image: url("/resources/images/1.jpg");
+  background-image: url("/resources/images/Research.jpg");
 }
 
 .section-5 .slide .item:nth-of-type(2) {
-  background-image: url("/resources/images/2.jpg");
+  background-image: url("/resources/images/Marketing.jpg");
 }
 
 .section-5 .slide .item:last-of-type {
-  background-image: url("/resources/images/3.jpg");
+  background-image: url("/resources/images/Marketplace.jpg");
 }
 /* END */
 
 /* SECTION 6 */
 .section-6 .slide .item:first-of-type {
-  background-image: url("/resources/images/1.jpg");
+  background-image: url("/resources/images/Data.jpg");
 }
 
 .section-6 .slide .item:nth-of-type(2) {
-  background-image: url("/resources/images/2.jpg");
+  background-image: url("/resources/images/Operation.jpg");
 }
 
 .section-6 .slide .item:last-of-type {
-  background-image: url("/resources/images/3.jpg");
+  background-image: url("/resources/images/Growth.jpg");
 }
 /* END */
 
@@ -616,6 +617,10 @@ section {
   padding-left: 2rem;
 }
 
+.section-8 .brand-logos {
+  width: 70%;
+}
+
 .section-8 .brand-logos ul {
   list-style: none;
   display: flex;
@@ -624,8 +629,34 @@ section {
   gap: 10rem;
 }
 
+.section-8 .brand-logos ul li {
+  display: flex;
+  align-items: center;
+}
+
 .section-8 .brand-logos ul li img {
   width: 13rem;
+}
+
+.peptid {
+  height: 4rem;
+}
+
+@media all and (max-width: 900px) {
+  .section-8 div {
+    padding-left: 0;
+  }
+  .section-8 .brand-logos ul {
+    gap: 5rem;
+  }
+
+  .section-8 .brand-logos ul li img {
+    width: 9rem;
+  }
+
+  .peptid {
+    height: 2.5rem;
+  }
 }
 /* END */
 
@@ -633,11 +664,12 @@ section {
 .section-9 {
   display: flex;
   justify-content: right;
+  text-align: justify;
 }
 
 .section-9 div {
   width: calc(100% - 7rem);
-  padding: 2rem;
+  padding: 5rem;
 }
 
 .section-9 div h1 {
@@ -648,6 +680,7 @@ section {
   color: var(--brown);
   font-weight: 500;
   line-height: 4.5rem;
+  margin-left: 4.5rem;
 }
 
 .section-9 div h1 span {
@@ -658,6 +691,7 @@ section {
   display: flex;
   flex-direction: row-reverse;
   gap: 5rem;
+  margin-top: -6rem;
 }
 
 .about-the-team img {
@@ -719,6 +753,28 @@ section {
   font-weight: 800;
 }
 
+.section-9 div .team-popup {
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.section-9 div .team-popup .close-team-popup {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: -3rem;
+  cursor: pointer;
+}
+
+.section-9 div .team-popup .chat-container {
+  width: 40rem;
+}
+
 @media all and (max-width: 1300px) {
   .about-the-team {
     display: flex;
@@ -744,6 +800,22 @@ section {
   .section-9 div {
     width: 100%;
     padding: 2rem;
+  }
+
+  .section-9 div h1 {
+    font-size: 3rem;
+    font-family: var(--secondary-font);
+    font-style: italic;
+    text-shadow: 2px 5px 1px var(--text-shadow);
+    color: var(--brown);
+    font-weight: 500;
+    line-height: 4.5rem;
+    margin-left: 4.5rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .section-9 div h1 span {
+    font-size: 7rem;
   }
 
   .section-9 div ul li img {
@@ -862,7 +934,6 @@ section {
 /* END */
 
 /* SECTION 11 */
-
 .section-11 {
   display: flex;
   justify-content: center;
@@ -871,64 +942,256 @@ section {
 .section-11 div {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.section-11 div .contact {
+.section-11 div .part-1 {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-  gap: 20rem;
+  gap: 10rem;
 }
 
-.section-11 div .contact .video {
-  width: 50rem;
+.section-11 div .part-1 .address {
+  max-width: 50rem;
 }
 
-.section-11 div .contact .form {
+.section-11 div .part-1 .form {
+  max-width: 50rem;
+}
+
+/*  */
+.section-11 div .part-1 .form h2 {
   font-family: var(--primary-font);
   color: var(--yellow);
+  font-size: 3rem;
+  font-weight: 800;
 }
 
-.section-11 div .contact .form h2 {
-  font-size: 3.5rem;
-  font-weight: 700;
-}
-
-.section-11 div .contact .form span {
+.section-11 div .part-1 .form p {
+  margin-top: -5rem;
+  font-family: var(--primary-font);
+  color: var(--yellow);
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 500;
   font-style: italic;
 }
 
-.section-11 div .contact .form form {
+.section-11 div .part-1 .form form {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  margin-top: 5rem;
+  gap: 4.5rem;
 }
 
-.section-11 div .contact .form form input {
+.section-11 div .part-1 .form form input {
   background: transparent;
-  border: none;
-  border-bottom: 0.1rem solid var(--yellow);
-  color: var(--brown);
   outline: none;
-  font-weight: 500;
-  font-size: 1.5rem;
-  width: 50rem;
+  border: none;
+  border-bottom: 1px solid var(--yellow);
+  font-family: var(--primary-font);
 }
 
-.section-11 div .contact .form form input:nth-child(4) {
+.section-11 div .part-1 .form form .message {
   height: 10rem;
 }
 
-.section-11 div .contact .form form input:last-of-type {
+.section-11 div .part-1 .form form .submit-form {
+  border: 1px solid var(--yellow);
   background-color: var(--yellow);
-  height: 4rem;
   width: 10rem;
+  height: 4rem;
+  font-family: var(--primary-font);
   color: var(--white);
+  font-weight: 700;
+  cursor: pointer;
+}
+/*  */
+
+.part-2 {
+  margin-top: 25rem;
+  width: 100%;
+}
+
+.section-11 div .part-2 {
+  background-color: var(--yellow);
+}
+
+.section-11 div .part-2 .footer {
+  background-color: var(--yellow);
+  height: 40rem;
+  background: url(/resources/images/background-2.png);
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 5rem;
+}
+
+.section-11 div .part-2 .footer div:first-of-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section-11 div .part-2 .footer div:first-of-type ul {
+  list-style: none;
+}
+
+.section-11 div .part-2 .footer div:last-of-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*  */
+
+.section-11 div .part-2 .footer div .box {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  box-shadow: 1px 1px 20px rgb(0, 0, 0, 0.5);
+  margin-top: -5rem;
+  margin-left: 5rem;
+}
+
+.section-11 div .part-2 .footer div .box li img {
+  width: 30rem;
+}
+
+.section-11 div .part-2 .footer div .box li {
+  font-family: var(--primary-font);
+  font-size: 1.8rem;
+}
+
+.section-11 div .part-2 .footer div .box li a {
+  margin: 1.5rem;
+}
+
+.section-11 div .part-2 .footer div .box li a img {
+  width: 3rem;
+}
+
+.section-11 div .part-2 .footer div .our-services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin-left: 2rem;
+}
+
+.section-11 div .part-2 .footer div .our-services ul li h2 {
+  font-size: 2.5rem;
+  font-family: var(--primary-font);
+  color: var(--white);
+  font-weight: 800;
+}
+
+.section-11 div .part-2 .footer div .our-services ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.section-11 div .part-2 .footer div .other-links {
+  display: flex;
+  align-items: center;
+}
+
+.section-11 div .part-2 .footer div .other-links ul li h2 {
+  font-size: 2.5rem;
+  font-family: var(--primary-font);
+  color: var(--white);
+  font-weight: 800;
+}
+
+.section-11 div .part-2 .footer div .other-links ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.section-11 div .part-2 .footer .copyright {
+  margin-bottom: 1rem;
+}
+
+.section-11 div .part-2 .footer .copyright p {
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+@media all and (max-width: 900px) {
+  .section-11 div .part-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-11 div .part-1 .address {
+    width: 33rem;
+    height: 30rem;
+  }
+
+  .section-11 div .part-1 .form {
+    width: 33rem;
+    height: 50rem;
+  }
+
+  .section-11 div .part-1 .form p {
+    margin-top: -2.5rem;
+  }
+
+  .section-11 div .part-2 .footer {
+    background-color: var(--yellow);
+    height: 90rem;
+    background: url(/resources/images/background-2.png);
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .section-11 div .part-2 .footer div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-11 div .part-2 .footer div:last-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .section-11 div .part-2 .footer div .box {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    box-shadow: 1px 1px 20px rgb(0, 0, 0, 0.5);
+    margin-top: -5rem;
+    margin-left: 0rem;
+    margin-bottom: 5rem;
+  }
+
+  .section-11 div .part-2 .footer div .our-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+    margin-left: 3rem;
+    margin-bottom: 5rem;
+  }
 }
 /* END */

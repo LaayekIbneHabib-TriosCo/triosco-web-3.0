@@ -271,6 +271,30 @@ section {
   background-image: url("/resources/images/Web\ 2.jpg");
 }
 
+.connect .slide .item-1 {
+  background-image: url("/resources/images/Research\ 1.jpg");
+}
+
+.connect .slide .item-2 {
+  background-image: url("/resources/images/Marketing\ 1.jpg");
+}
+
+.connect .slide .item-3 {
+  background-image: url("/resources/images/Marketplace\ 1.jpg");
+}
+
+.transcend .slide .item-1 {
+  background-image: url("/resources/images/Data\ 1.jpg");
+}
+
+.transcend .slide .item-2 {
+  background-image: url("/resources/images/Operation\ 1.jpg");
+}
+
+.transcend .slide .item-3 {
+  background-image: url("/resources/images/Growth\ 1.jpg");
+}
+
 .section .slide .item h1 {
   font-family: var(--primary-font);
   font-size: 2.2rem;
@@ -307,7 +331,7 @@ section {
   height: calc(100vh - 9.3rem);
   width: 100%;
   overflow-x: hidden;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .section .slide .item .wrapper .content h2 {
@@ -324,7 +348,7 @@ section {
 .section .slide .item .wrapper .content:first-of-type {
   width: 50%;
   float: right;
-  padding-top: 10rem;
+  padding-top: 2rem;
 }
 
 .section .slide .item .content:first-of-type .left-qoute {
