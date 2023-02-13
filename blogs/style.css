@@ -246,12 +246,14 @@ section {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  text-align: justify;
 }
 
 .back-button {
   width: 3.5rem;
   height: 3.5rem;
   cursor: pointer;
+  position: fixed;
 }
 
 .blog {
