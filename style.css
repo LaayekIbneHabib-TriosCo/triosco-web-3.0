@@ -719,6 +719,11 @@ section {
 
 .section-9 div ul li img {
   width: 25rem;
+  transition: 0.3s ease;
+}
+
+.section-9 div ul li img:hover {
+  width: 22rem;
 }
 
 .team-member-heading {
@@ -756,12 +761,29 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 55.5rem;
-  height: 40.8rem;
+  max-width: 50rem;
+  height: 36.8rem;
   background-image: url(/resources/images/Pop-Up\ Box.png);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: var(--primary-font);
+}
+
+.close-popup {
+  float: right;
+  background: transparent;
+  border: none;
+  margin-top: -2rem;
+  margin-right: -2rem;
+  cursor: pointer;
+}
+
+.close-popup img {
+  width: 2rem;
+}
+
+.one,
+.two {
   display: none;
 }
 

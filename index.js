@@ -243,3 +243,22 @@ icons.forEach((icon, i) => {
 // END
 
 // TEAM OVERVIEW
+
+document.querySelector(".teamOverview1").addEventListener("click", () => {
+  document.querySelector(".one").style.display = "block";
+});
+
+document.querySelector(".teamOverview2").addEventListener("click", () => {
+  document.querySelector(".two").style.display = "block";
+});
+
+//
+
+var closebtns = document.getElementsByClassName("close-popup");
+var i;
+
+for (i = 0; i < closebtns.length; i++) {
+  closebtns[i].addEventListener("click", function () {
+    this.parentElement.style.display = "none";
+  });
+}
