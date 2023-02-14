@@ -723,7 +723,7 @@ section {
 }
 
 .section-9 div ul li img:hover {
-  width: 22rem;
+  width: 24rem;
 }
 
 .team-member-heading {
@@ -1010,7 +1010,7 @@ section {
 }
 
 .section-11 div .part-1 .form p {
-  margin-top: -5rem;
+  margin-top: -3rem;
   font-family: var(--primary-font);
   color: var(--yellow);
   font-size: 1.8rem;
@@ -1049,7 +1049,7 @@ section {
 /*  */
 
 .part-2 {
-  margin-top: 25rem;
+  margin-top: 12rem;
   width: 100%;
 }
 

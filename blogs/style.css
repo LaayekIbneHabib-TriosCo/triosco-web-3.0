@@ -263,14 +263,10 @@ section {
   font-size: 1.8rem;
 }
 
-.blog span {
-  font-weight: 700;
-}
-
 .part-1 {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 .part-1 h1 {
