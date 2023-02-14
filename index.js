@@ -243,15 +243,3 @@ icons.forEach((icon, i) => {
 // END
 
 // TEAM OVERVIEW
-
-document
-  .querySelector(".close-team-popup")
-  .addEventListener("click", function () {
-    document.querySelector(".team-popup").style.left = "-50%";
-  });
-
-document
-  .querySelector(".memberOverview")
-  .addEventListener("click", function () {
-    document.querySelector(".team-popup").style.left = "50%";
-  });

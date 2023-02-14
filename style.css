@@ -560,15 +560,15 @@ section {
 
 /* SECTION 5 */
 .section-5 .slide .item:first-of-type {
-  background-image: url("/resources/images/Research.jpg");
+  background-image: url("/resources/images/connect/Research.jpg");
 }
 
 .section-5 .slide .item:nth-of-type(2) {
-  background-image: url("/resources/images/Marketing.jpg");
+  background-image: url("/resources/images/connect/Marketing.jpg");
 }
 
 .section-5 .slide .item:last-of-type {
-  background-image: url("/resources/images/Marketplace.jpg");
+  background-image: url("/resources/images/connect/Marketplace.jpg");
 }
 /* END */
 
@@ -722,15 +722,13 @@ section {
 }
 
 .team-member-heading {
-  background-color: var(--yellow);
-  width: 100%;
-  height: 3.8rem;
+  font-size: 3.5rem;
   font-family: var(--primary-font);
-  font-style: normal;
-  font-weight: 700;
+  text-shadow: 2px 5px 1px var(--text-shadow);
+  color: var(--brown);
+  font-weight: 800;
+  line-height: 4.5rem;
   text-align: center;
-  color: var(--white);
-  font-size: 2.6rem;
 }
 
 .employer-heading {
@@ -753,26 +751,46 @@ section {
   font-weight: 800;
 }
 
-.section-9 div .team-popup {
+.team-popup {
   position: absolute;
   top: 50%;
-  left: -50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-
-  display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
+  max-width: 55.5rem;
+  height: 40.8rem;
+  background-image: url(/resources/images/Pop-Up\ Box.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: var(--primary-font);
+  display: none;
 }
 
-.section-9 div .team-popup .close-team-popup {
-  width: 2.5rem;
-  height: 2.5rem;
-  margin-top: -3rem;
-  cursor: pointer;
+.team-popup h2 {
+  color: var(--yellow);
+  font-size: 3rem;
+  font-weight: 800;
+  font-style: italic;
+  margin-top: -2.5rem;
 }
 
-.section-9 div .team-popup .chat-container {
-  width: 40rem;
+.team-popup h3 {
+  color: var(--yellow);
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-top: -0.5rem;
+  border-bottom: 3px solid var(--yellow);
+}
+
+.team-popup .p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.team-popup .social {
+  width: 3rem;
+  margin-top: 2rem;
 }
 
 @media all and (max-width: 1300px) {
@@ -1020,7 +1038,7 @@ section {
 .section-11 div .part-2 .footer {
   background-color: var(--yellow);
   height: 40rem;
-  background: url(/resources/images/background-2.png);
+  background: url(/resources/images/imageedit_1_4684959322.png);
   z-index: 9;
   display: flex;
   flex-direction: column;
@@ -1154,7 +1172,7 @@ section {
   .section-11 div .part-2 .footer {
     background-color: var(--yellow);
     height: 90rem;
-    background: url(/resources/images/background-2.png);
+    background: url(/resources/images/background-white-5%.png);
     z-index: 9;
     display: flex;
     flex-direction: column;

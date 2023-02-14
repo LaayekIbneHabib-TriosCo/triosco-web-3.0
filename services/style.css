@@ -272,15 +272,15 @@ section {
 }
 
 .connect .slide .item-1 {
-  background-image: url("/resources/images/Research\ 1.jpg");
+  background-image: url("/resources/images/connect/Research\ 1.jpg");
 }
 
 .connect .slide .item-2 {
-  background-image: url("/resources/images/Marketing\ 1.jpg");
+  background-image: url("/resources/images/connect/Marketing\ 1.jpg");
 }
 
 .connect .slide .item-3 {
-  background-image: url("/resources/images/Marketplace\ 1.jpg");
+  background-image: url("/resources/images/connect/Marketplace\ 1.jpg");
 }
 
 .transcend .slide .item-1 {
@@ -406,11 +406,18 @@ section {
 }
 
 .slider-heading {
-  color: var(--yellow);
+  /* color: var(--yellow);
   font-family: var(--primary-font);
   font-size: 4rem;
   font-weight: 700;
-  margin-top: -2rem;
+  margin-top: -2rem; */
+
+  font-size: 4rem;
+  font-family: var(--secondary-font);
+  text-shadow: 2px 5px 1px var(--text-shadow);
+  color: var(--brown);
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
 .center-slider-menu {
