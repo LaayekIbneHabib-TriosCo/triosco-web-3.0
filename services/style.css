@@ -65,7 +65,7 @@
 html,
 body {
   overflow-x: hidden;
-  background-image: url(/resources/images/background.png);
+  /* background-image: url(/resources/images/background.png); */
 }
 
 .disclamer {
@@ -157,7 +157,7 @@ header ul li a span {
   position: absolute;
   margin-top: 6rem;
   height: calc(100vh - 6rem);
-  width: 10rem;
+  width: 7rem;
   overflow-x: hidden;
   overflow-y: scroll;
   z-index: 2;
@@ -174,10 +174,17 @@ header ul li a span {
   }
 }
 
+.nav ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+}
+
 .nav ul li {
-  font-size: 6rem;
   text-align: center;
-  line-height: 10rem;
+  line-height: 7rem;
 }
 
 .nav ul li:nth-child(8) {
@@ -185,11 +192,11 @@ header ul li a span {
 }
 
 .nav ul li img {
-  width: 3rem;
+  width: 2.2rem;
 }
 
 .nav ul li .dot {
-  width: 1rem;
+  width: 0.8rem;
 }
 
 @media all and (min-width: 900px) {
@@ -236,13 +243,12 @@ section {
 .section {
   display: flex;
   justify-content: flex-end;
-  justify-content: center;
 }
 
 .section .slide {
   display: flex;
   flex-direction: row;
-  width: calc(100% - 20rem);
+  width: calc(100% - 7rem);
 }
 
 .section .slide .item {
@@ -263,6 +269,30 @@ section {
 
 .create .slide .item-3 {
   background-image: url("/resources/images/Web\ 2.jpg");
+}
+
+.connect .slide .item-1 {
+  background-image: url("/resources/images/connect/Research\ 1.jpg");
+}
+
+.connect .slide .item-2 {
+  background-image: url("/resources/images/connect/Marketing\ 1.jpg");
+}
+
+.connect .slide .item-3 {
+  background-image: url("/resources/images/connect/Marketplace\ 1.jpg");
+}
+
+.transcend .slide .item-1 {
+  background-image: url("/resources/images/Data\ 1.jpg");
+}
+
+.transcend .slide .item-2 {
+  background-image: url("/resources/images/Operation\ 1.jpg");
+}
+
+.transcend .slide .item-3 {
+  background-image: url("/resources/images/Growth\ 1.jpg");
 }
 
 .section .slide .item h1 {
@@ -301,13 +331,24 @@ section {
   height: calc(100vh - 9.3rem);
   width: 100%;
   overflow-x: hidden;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
+}
+
+.section .slide .item .wrapper .content h2 {
+  font-size: 4rem;
+  font-family: var(--secondary-font);
+  font-style: italic;
+  text-shadow: 2px 5px 1px var(--text-shadow);
+  color: var(--brown);
+  font-weight: 700;
+  line-height: 4.5rem;
+  margin-bottom: 2rem;
 }
 
 .section .slide .item .wrapper .content:first-of-type {
   width: 50%;
   float: right;
-  padding-top: 10rem;
+  padding-top: 2rem;
 }
 
 .section .slide .item .content:first-of-type .left-qoute {
@@ -315,15 +356,91 @@ section {
 }
 
 .section .slide .item .content:first-of-type p {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: var(--primary-font);
   color: var(--brown);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .section .slide .item .content:first-of-type p span {
   font-weight: 700;
   color: var(--yellow);
+}
+
+.content .primary-service-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.service-list {
+  font-size: 2rem;
+  font-family: var(--primary-font);
+  color: var(--brown);
+  font-weight: 400;
+  margin-left: 2rem;
+  padding-left: 1rem;
+}
+
+.service-list:nth-child(2) {
+  margin-left: 10rem;
+}
+
+.service-list li {
+  text-decoration: dotted;
+}
+
+.quote {
+  text-align: center;
+  margin-top: 5rem;
+  width: 50rem;
+}
+
+.quote p {
+  position: relative;
+  z-index: 2;
+}
+
+.quote img {
+  width: 15rem;
+  margin-top: -12rem;
+}
+
+.slider-heading {
+  /* color: var(--yellow);
+  font-family: var(--primary-font);
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: -2rem; */
+
+  font-size: 4rem;
+  font-family: var(--secondary-font);
+  text-shadow: 2px 5px 1px var(--text-shadow);
+  color: var(--brown);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.center-slider-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  overflow-x: auto;
+  width: 50rem;
+}
+
+.row .column {
+  display: flex;
+  justify-content: center;
+  width: 14rem;
+  padding-left: 10rem;
+}
+
+.row .column img {
+  width: 10rem;
+  height: 5rem;
+  cursor: pointer;
 }
 
 @media all and (max-width: 900px) {
@@ -343,7 +460,15 @@ section {
 
   .section .slide .item .wrapper .content:first-of-type {
     width: 100%;
-    padding-top: 0rem;
+    padding-top: 5rem;
+  }
+
+  .quote {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 80vw;
+    margin-top: 5rem;
   }
 }
 
@@ -448,7 +573,7 @@ section {
   cursor: pointer;
   position: absolute;
   /* top: 40%; */
-  top: 35%;
+  top: 45%;
   width: auto;
   padding: 16px;
   /* margin-top: -50px; */
@@ -462,8 +587,8 @@ section {
 
 .prev:hover,
 .next:hover {
-  background-color: var(--yellow);
-  color: var(--white);
+  /* background-color: var(--yellow); */
+  color: var(--yellow);
 }
 
 .numbertext {
@@ -513,8 +638,11 @@ section {
 }
 
 .demo {
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   opacity: 0.6;
+
+  height: 6rem;
+  width: 10rem;
 }
 
 .active,
@@ -732,3 +860,31 @@ section {
 }
 
 /* SHREYA'S CODE ENDS */
+
+.swipe-up-arrow {
+  position: relative;
+  top: 5rem;
+  width: 4rem;
+  display: flex;
+  align-self: center;
+  animation: bounce 0.6s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-iteration-count: 8;
+  animation-delay: 4s;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 15px, 0);
+  }
+}
+
+@media all and (max-width: 900px) {
+  .swipe-up-arrow {
+    display: none;
+  }
+}

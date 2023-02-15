@@ -65,3 +65,9 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
 }
+
+// demo
+
+// document.getElementById("modal-content").addEventListener("click", function () {
+//   document.querySelector(".nav").style.visibility = "hidden";
+// });

@@ -131,7 +131,7 @@
             <div class="item">
               <h1>BRANDING</h1>
               <div class="wrapper">
-                <a href="/index.html">
+                <a onclick="window.history.back()" style="cursor: pointer">
                   <img src="/resources/images/icons/back.png" alt="" />
                 </a>
                 <!-- Content is your parent div -->
@@ -142,42 +142,32 @@
                     <h2 class="brand-about">ABOUT THE PROJECT:</h2>
                     <section>
                       <p class="brand-about-content">
-                        Ayna Decors is a meta luxury brand of premium
-                        sanitaryware that serves customers in the United States.
-                        At TriosCo, we created Ayna Decors as a brand. From
-                        conceptualization, branding, creation of their website,
-                        rendfering designs, and creating their catalog, to
-                        listing them on eComm marketplace, we helped them build
-                        an identity and scale online. Lorem ipsum dolor sit amet
-                        consectetur, adipisicing elit. Eveniet tenetur
-                        laboriosam sequi neque quo! Odio ex tempore in modi hic
-                        placeat voluptate, dignissimos, vel, suscipit nisi
-                        quaerat facilis nulla rerum. Quod quisquam ipsam
-                        corporis at, odit sapiente harum aperiam itaque!
-                        Voluptatibus, recusandae iure dolorum cupiditate
-                        deserunt vel repellendus possimus blanditiis, non
-                        obcaecati, dolores nihil error eius asperiores ipsum eos
-                        incidunt! Sapiente incidunt dolorem, fugit distinctio,
-                        vel, numquam eos magnam et excepturi repudiandae tenetur
-                        dolor quos id. Quis, quibusdam autem rerum ea provident
-                        voluptatibus deleniti odio totam voluptates et,
-                        cupiditate perferendis. Mollitia, quibusdam aliquam
-                        tenetur cumque, alias harum praesentium suscipit earum
-                        rem atque, velit pariatur similique nam. Quod,
-                        asperiores est? Dolores laboriosam soluta voluptatem
-                        nemo, dolor fugit animi et cum hic! Quod dolorem, eaque
-                        asperiores voluptatibus possimus eligendi ipsa quisquam
-                        omnis nisi natus aut nihil? Odit dicta ratione ab sunt
-                        placeat, reprehenderit facere quidem ullam. Qui aperiam
-                        sequi excepturi neque quos.
+                        Ayna Decors is a meta luxury brand of premium furniture
+                        based in the United States. At TriosCo, we created Ayna
+                        Decors as a brand. From conceptualization, branding,
+                        creation of their website, rendering designs, and
+                        creating their catalog, to listing them on Amazon, we
+                        helped them build an identity and scale online and
+                        offline.
                       </p>
+
+                      <br />
+                      <br />
                       <div class="brand-icons">
+                        <h2>CHECK OUR WORK BELOW:</h2>
                         <ul>
                           <li>
-                            <a href="#" target="_blank"
+                            <a href="https://aynadecors.com/" target="_blank"
                               ><img
                                 src="/resources/images/icons/web.png"
                                 alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.amazon.com/Ayna-Decors-Rooh-Extention-AVR24GR0002/dp/B0BS3NJS1Z/ref=sr_1_3?crid=3GZPT1U6R1A6N&keywords=ayna%2Bbathroom%2Bvanity&qid=1674048670&sprefix=ayna%2Bbathroom%2Bvanity%2Caps%2C299&sr=8-3&th=1"
+                              target="_blank"
+                              ><img src="/resources/images/amazon.svg" alt=""
                             /></a>
                           </li>
                           <li>
@@ -194,11 +184,25 @@
                                 alt=""
                             /></a>
                           </li>
+                          <li>
+                            <a href="#" target="_blank"
+                              ><img
+                                src="/resources/images/pinterest.svg"
+                                alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank"
+                              ><img
+                                src="/resources/images/book-open-solid.svg"
+                                alt=""
+                            /></a>
+                          </li>
                         </ul>
                       </div>
                     </section>
                   </div>
-                  <div class="grid-container" id="open-gallery-btn">
+                  <!-- <div class="grid-container" id="open-gallery-btn">
                     <div class="grid-item">
                       <figure>
                         <img src="/resources/images/A1.jpg" alt="" />
@@ -239,6 +243,50 @@
                         <img src="/resources/images/A8.jpg" alt="" />
                       </figure>
                     </div>
+                  </div> -->
+                  <div class="container" id="open-gallery-btn">
+                    <div class="image-container">
+                      <img
+                        src="/resources/images/brand_grid_img/A1.webp"
+                        alt=""
+                      />
+                      <img
+                        src="/resources/images/brand_grid_img/A3.webp"
+                        alt=""
+                      />
+                      <img
+                        src="/resources/images/brand_grid_img/A4.webp"
+                        alt=""
+                      />
+                      <img
+                        src="/resources/images/brand_grid_img/A6.webp"
+                        alt=""
+                      />
+                      <img
+                        src="/resources/images/brand_grid_img/A9.webp"
+                        alt=""
+                      />
+                      <img
+                        src="/resources/images/brand_grid_img/A2.webp"
+                        alt=""
+                      />
+                      <img
+                        src="/resources/images/brand_grid_img/A2.webp"
+                        alt=""
+                      />
+                      <img
+                        src="/resources/images/brand_grid_img/A7.webp"
+                        alt=""
+                      />
+                      <img
+                        src="/resources/images/brand_grid_img/A8.webp"
+                        alt=""
+                      />
+                      <img
+                        src="/resources/images/brand_grid_img/A10.webp"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
                 <!-- SHREYA'S CODE END -->
@@ -250,7 +298,7 @@
           <!--  -->
           <div id="myModal" class="modal">
             <span class="close cursor" onclick="closeModal()">&times;</span>
-            <div class="modal-content">
+            <div class="modal-content" id="modal-content">
               <img src="/resources/images/A1.jpg" class="modal-img" />
               <img src="/resources/images/A2.jpg" class="modal-img" />
               <img src="/resources/images/A3.jpg" class="modal-img" />
@@ -263,7 +311,6 @@
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
-
           <!--  -->
         </section>
         <!-- END -->

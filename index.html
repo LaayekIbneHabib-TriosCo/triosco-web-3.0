@@ -31,22 +31,20 @@
     <link rel="stylesheet" href="style.css" />
     <title>TriosCo</title>
   </head>
-  <body>
+  <body class="body">
     <div class="disclamer">
       <h1>Screen size is too small to view 🙁!!</h1>
     </div>
     <div class="flex-container">
       <header class="header">
         <ul>
-          <li class="burger-menu" onclick="window.navigator.vibrate(50)">
-            <!-- BUTTON OPEN -->
-            <a href="#" class="button-open">
+          <!-- BURGER MENU -->
+          <li id="burger-menu" onclick="window.navigator.vibrate(50)">
+            <a href="#" id="button-open">
               <img src="./resources/images/icons/menu.png" alt="" />
             </a>
-            <!-- END -->
-
-            <!-- BUTTON CLOSE -->
-            <a href="#" class="button-close" style="display: none">
+            <!--  -->
+            <a href="#" id="button-close">
               <img src="./resources/images/icons/close.png" alt="" />
             </a>
             <!-- END -->
@@ -57,13 +55,14 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#section-11">
               <img src="./resources/images/icons/wifi.png" alt="" />
             </a>
           </li>
         </ul>
       </header>
 
+      <!-- SIDE NAV -->
       <nav class="nav">
         <ul>
           <li>
@@ -71,17 +70,26 @@
               <img
                 src="./resources/images/icons/about-us-inactive.png"
                 alt=""
+                class="nav-icons about-us"
               />
             </a>
           </li>
           <li>
             <a href="#section-4">
-              <img src="./resources/images/icons/create-inactive.png" alt="" />
+              <img
+                src="./resources/images/icons/create-inactive.png"
+                alt=""
+                class="nav-icons create"
+              />
             </a>
           </li>
           <li>
             <a href="#section-5">
-              <img src="./resources/images/icons/connect-inactive.png" alt="" />
+              <img
+                src="./resources/images/icons/connect-inactive.png"
+                alt=""
+                class="nav-icons connect"
+              />
             </a>
           </li>
           <li>
@@ -89,15 +97,16 @@
               <img
                 src="./resources/images/icons/transcend-inactive.png"
                 alt=""
+                class="nav-icons transcend"
               />
             </a>
           </li>
-          <li>
+          <li style="display: none">
             <a href="#section-7">
               <img
                 src="./resources/images/icons/circle-tab-inactive.png"
                 alt=""
-                class="dot"
+                class="nav-icons dot dot-one"
               />
             </a>
           </li>
@@ -106,28 +115,43 @@
               <img
                 src="./resources/images/icons/circle-tab-inactive.png"
                 alt=""
-                class="dot"
+                class="nav-icons dot dot-two"
               />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#section-9">
               <img
                 src="./resources/images/icons/circle-tab-inactive.png"
                 alt=""
-                class="dot"
+                class="nav-icons dot dot-three"
               />
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src="./resources/images/icons/contact-inactive.png" alt="" />
+            <a href="#section-10">
+              <img
+                src="./resources/images/icons/circle-tab-inactive.png"
+                alt=""
+                class="nav-icons dot dot-four"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#section-11">
+              <img
+                src="./resources/images/icons/contact-inactive.png"
+                class="nav-icons call"
+                alt=""
+              />
             </a>
           </li>
         </ul>
       </nav>
+      <!-- END -->
 
       <main>
+        <!-- HOME -->
         <section class="section-1">
           <ul>
             <li>
@@ -144,52 +168,80 @@
             We aim to simplify your business and help you
             <span>Shine Online</span>
           </p>
+          <br />
+          <img
+            src="/resources/images/icons/swipe-up.png"
+            class="swipe-up-arrow"
+            alt=""
+          />
         </section>
+        <!-- END -->
 
+        <!-- VIDEO -->
         <section class="section-2">
-          <!-- PAGE IS INCOMPLETE AS VIDEO IS NOT YET MADE! -->
+          <!-- PAGE IS YET TO BE MADE -->
         </section>
+        <!-- END -->
 
+        <!-- OUR STORY -->
         <section class="section-3" id="section-3">
           <div>
             <figure>
-              <img
-                width="100%"
-                height="100%"
-                src="./resources/images/pexels-ovan-57690.jpg"
-                alt=""
-              />
+              <video width="100%" height="100%" autoplay muted loop>
+                <source
+                  src="/resources/images/About Us Video (1).mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="/resources/images/About Us Video (1).mp4"
+                  type="video/ogg"
+                />
+              </video>
             </figure>
             <article>
               <h1>The<br /><span>Story</span></h1>
               <p>
                 What started off as a conversation over coffee among four
                 acquaintances, turned into industry experts coming together
-                under one umbrella to create team <span>TriosCo</span>. With a
-                passion for knowledge, we set out to empower people who share
-                the same drive to learn and make an impact as an individual.
-                After all, knowledge is power. <br /><br />
+                under one umbrella to create Team TriosCo. With a passion for
+                knowledge, we set out to empower people who share the same drive
+                to learn and make an impact as individuals. After all, knowledge
+                is power.<br /><br />
                 We began with a simple idea to give back. Not only in terms of
                 creating great minds who have the ability to carve out their own
-                niche, but to also impart our expertise beyond our circle.
-                <br /><br />
-                As a full-service digital agency, we strive to provide an all
-                round solution. Riding through the complexities of
-                <span>coding</span>, with the artistry of
-                <span>content</span> and immersive <span>creatives</span>, the
-                ever-changing realm of <span>e-commerce</span> aligned with the
-                booming world of <span>social media</span>,
-                <span>creates</span> our edge to <span>connect</span> with a
-                legacy that <span>transcends</span> beyond team
-                <span>TriosCo</span>.
-                <br />
-                <br />
-                <br />
-                <br />
+                niche, but also to impart our expertise beyond our circle. As a
+                full-service digital agency, we strive to provide an all-around
+                solution.<br /><br />
+                Riding through the complexities of coding with the artistry of
+                content and immersive creatives, the ever-changing realm of
+                e-commerce aligned with the thriving world of social media gives
+                us an edge to connect with a legacy that extends beyond the team
+                of TriosCo.<br /><br />
+                <span>OUR PARTNERS:</span>
               </p>
+              <br />
+              <ul>
+                <li>
+                  <img src="/resources/images/amazon-partner.png" alt="" />
+                </li>
+                <li>
+                  <img src="/resources/images/google-partner.png" alt="" />
+                </li>
+                <li>
+                  <img src="/resources/images/shopify-partner.png" alt="" />
+                </li>
+                <li>
+                  <img src="/resources/images/meta-partner.png" alt="" />
+                </li>
+              </ul>
+              <br />
+              <br />
+              <br />
+              <br />
             </article>
           </div>
         </section>
+        <!-- END -->
 
         <!-- CREATE -->
         <section class="services section-4" id="section-4">
@@ -197,43 +249,49 @@
             <div class="item item-1">
               <h1>BRANDING</h1>
               <div class="preview preview-1">
-                <p>
-                  Branding is about creating your own story. It starts with a
-                  well-crafted 'vision' that speaks for you and represents your
-                  brand values.
-                </p>
-                <button onclick="location='services/pages/branding.html'">
-                  View more
-                </button>
+                <div class="double-border">
+                  <p>
+                    Branding is about creating your own story. It starts with a
+                    well-crafted 'vision' that speaks for you and represents
+                    your brand values.
+                  </p>
+                  <button onclick="location='services/pages/branding.html'">
+                    View more
+                  </button>
+                </div>
               </div>
             </div>
             <div class="item item-2">
               <h1>MEDIA & PRODUCTION</h1>
               <div class="preview preview-2">
-                <p>
-                  Creating visuals that make the right impression and reach the
-                  desired audience to create a long-lasting impact every single
-                  time.
-                </p>
-                <button
-                  onclick="location='services/pages/media_&_production.html'"
-                >
-                  View more
-                </button>
+                <div class="double-border">
+                  <p>
+                    Creating visuals that make the right impression and reach
+                    the desired audience to create a long-lasting impact every
+                    single time.
+                  </p>
+                  <button
+                    onclick="location='services/pages/media_&_production.html'"
+                  >
+                    View more
+                  </button>
+                </div>
               </div>
             </div>
             <div class="item item-3">
               <h1>E-COMMERCE & WEBSITE</h1>
               <div class="preview preview-3">
-                <p>
-                  Since shopping with a click has become the go to trend, we
-                  help you create your website & marketplace presence.
-                </p>
-                <button
-                  onclick="location='services/pages/ecommerce_&_website.html'"
-                >
-                  View more
-                </button>
+                <div class="double-border">
+                  <p>
+                    Since shopping with a click has become the go to trend, we
+                    help you create your website & marketplace presence.
+                  </p>
+                  <button
+                    onclick="location='services/pages/ecommerce_&_website.html'"
+                  >
+                    View more
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -247,45 +305,51 @@
             <div class="item item-1B">
               <h1>RESEARCH AND CONSULTANCY</h1>
               <div class="preview preview-1B">
-                <p>
-                  Through an in-depth study of your brand’s marketability and
-                  acceptability, we map out the blueprint to build a strong
-                  foundation.
-                </p>
-                <button onclick="location='services/pages/branding.html'">
-                  View more
-                </button>
+                <div class="double-border">
+                  <p>
+                    Through an in-depth study of your brand’s marketability and
+                    acceptability, we map out the blueprint to build a strong
+                    foundation.
+                  </p>
+                  <button
+                    onclick="location='services/pages/research_&_consultancy.html'"
+                  >
+                    View more
+                  </button>
+                </div>
               </div>
             </div>
             <!--  -->
             <div class="item item-2B">
               <h1>MARKETING</h1>
               <div class="preview preview-2B">
-                <p>
-                  Marketing is the game changer that strategically works in a
-                  cohesive manner to promote your brand identity and creates
-                  your global personality.
-                </p>
-                <button
-                  onclick="location='services/pages/media_&_production.html'"
-                >
-                  View more
-                </button>
+                <div class="double-border">
+                  <p>
+                    Marketing is the game changer that strategically works in a
+                    cohesive manner to promote your brand identity and creates
+                    your global personality.
+                  </p>
+                  <button onclick="location='services/pages/marketing.html'">
+                    View more
+                  </button>
+                </div>
               </div>
             </div>
             <!--  -->
             <div class="item item-3B">
               <h1>MARKETPLACE ADVERTISING</h1>
               <div class="preview preview-3B">
-                <p>
-                  It’s important for you to be visible on all platforms when
-                  your audience is looking for you to drive sales.
-                </p>
-                <button
-                  onclick="location='services/pages/ecommerce_&_website.html'"
-                >
-                  View more
-                </button>
+                <div class="double-border">
+                  <p>
+                    It’s important for you to be visible on all platforms when
+                    your audience is looking for you to drive sales.
+                  </p>
+                  <button
+                    onclick="location='services/pages/marketplace_advertising.html'"
+                  >
+                    View more
+                  </button>
+                </div>
               </div>
             </div>
             <!--  -->
@@ -300,44 +364,50 @@
             <div class="item item-1C">
               <h1>DATA ANALYTICS</h1>
               <div class="preview preview-1C">
-                <p>
-                  Using the tools and techniques of data analytics, we explore
-                  the untapped potential and discover valuable insights to solve
-                  business complexities.
-                </p>
-                <button onclick="location='services/pages/branding.html'">
-                  View more
-                </button>
+                <div class="double-border">
+                  <p>
+                    Using the tools and techniques of data analytics, we explore
+                    the untapped potential and discover valuable insights to
+                    solve business complexities.
+                  </p>
+                  <button
+                    onclick="location='services/pages/data_analytics.html'"
+                  >
+                    View more
+                  </button>
+                </div>
               </div>
             </div>
             <!--  -->
             <div class="item item-2C">
               <h1>OPERATIONS</h1>
               <div class="preview preview-2C">
-                <p>
-                  By simplifying the way you work; we are able to optimize your
-                  operations and accelerate your desired growth.
-                </p>
-                <button
-                  onclick="location='services/pages/media_&_production.html'"
-                >
-                  View more
-                </button>
+                <div class="double-border">
+                  <p>
+                    By simplifying the way you work; we are able to optimize
+                    your operations and accelerate your desired growth.
+                  </p>
+                  <button onclick="location='services/pages/operations.html'">
+                    View more
+                  </button>
+                </div>
               </div>
             </div>
             <!--  -->
             <div class="item item-3C">
               <h1>GROWTH OPTIMIZATION</h1>
               <div class="preview preview-3C">
-                <p>
-                  We identify your key performing indicators to help you
-                  continuously leverage them and make you shine online.
-                </p>
-                <button
-                  onclick="location='services/pages/ecommerce_&_website.html'"
-                >
-                  View more
-                </button>
+                <div class="double-border">
+                  <p>
+                    We identify your key performing indicators to help you
+                    continuously leverage them and make you Shine Online.
+                  </p>
+                  <button
+                    onclick="location='services/pages/growth_optimization.html'"
+                  >
+                    View more
+                  </button>
+                </div>
               </div>
             </div>
             <!--  -->
@@ -345,28 +415,265 @@
         </section>
         <!-- END -->
 
+        <!-- ABOUT OUR SERVICES -->
         <section class="section-7" id="section-7">
+          <!-- PAGE IS PENDING -->
+        </section>
+        <!-- END -->
+
+        <!-- BRANDS WE HAVE WORKED WITH -->
+        <section class="section-8" id="section-8">
+          <h2>Our Clientele</h2>
+          <div>
+            <div class="brand-logos">
+              <ul>
+                <li>
+                  <img src="/resources/images/brand-logos/Ayna.webp" alt="" />
+                </li>
+                <li>
+                  <img src="/resources/images/brand-logos/J&A.webp" alt="" />
+                </li>
+                <li>
+                  <img src="/resources/images/brand-logos/Radon.webp" alt="" />
+                </li>
+                <li>
+                  <img
+                    class="peptid"
+                    src="/resources/images/brand-logos/peptid.webp"
+                    alt=""
+                  />
+                </li>
+                <li>
+                  <img
+                    src="/resources/images/brand-logos/Onovivo.webp"
+                    alt=""
+                  />
+                </li>
+                <li>
+                  <img
+                    src="/resources/images/brand-logos/DzenArte.webp"
+                    alt=""
+                  />
+                </li>
+                <li>
+                  <img src="/resources/images/brand-logos/GETCO.webp" alt="" />
+                </li>
+                <li>
+                  <img
+                    src="/resources/images/brand-logos/The Nut Company.webp"
+                    alt=""
+                  />
+                </li>
+                <li>
+                  <img src="/resources/images/brand-logos/LL.webp" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- END -->
+
+        <!-- THE TEAM -->
+        <section class="section-9" id="section-9">
+          <div>
+            <h1>Humans of<br /><span>TriosCo</span></h1>
+            <div class="about-the-team">
+              <img src="/resources/images/Group Picture.png" alt="" />
+              <p>
+                Our team is made up of people from all walks of life, including
+                industry leaders, IT enthusiasts, data-driven strategists, and
+                above all, brilliant thinkers. Our mission is to foster open,
+                honest, and collaborative partnerships with each and every one
+                of our clients.<br /><br />
+                We, as a team, encourage open communication and welcome new
+                ideas and perspectives from all members of the team. We strictly
+                believe in incorporating an inclusive atmosphere where everyone
+                feels valued and heard as productivity is always directly
+                related to happiness!<br /><br />
+                <span>LANGUAGES WE SPEAK:</span><br />
+                English | German | Spanish | French | Hindi | Bengali | Gujarati
+                <br /><br />
+              </p>
+            </div>
+
+            <h2 class="team-member-heading">MEET AND GREET</h2>
+            <!-- EMPLOYERS -->
+            <h2 class="employer-heading">— Our Chieftains —</h2>
+            <ul>
+              <!-- member -->
+              <li class="teamOverview1">
+                <img src="/resources/images/1.png" alt="" />
+              </li>
+              <!-- end -->
+
+              <!-- team popup -->
+              <div class="team-popup one">
+                <button class="close-popup">
+                  <img src="/resources/images/icons/close-yellow.png" alt="" />
+                </button>
+                <h2>Anushka Basu</h2>
+                <h3>Sr. Content Writer</h3>
+                <p class="p">
+                  Anushka Basu is the Sr. Content Writer at TriosCo, who is a
+                  tech enthusiast and has deep knowledge of all things
+                  blockchain! She’s worked with many national and international
+                  brands in various arenas. What sets her apart in the crowd has
+                  to be her funky hair color and her constant chitter-chatter
+                  about cats.
+                </p>
+                <img
+                  src="/resources/images/icons/linkedin-logo-yellow.png"
+                  alt=""
+                  class="social"
+                />
+              </div>
+              <!-- end -->
+
+              <!-- member -->
+              <li class="teamOverview2">
+                <img src="/resources/images/2.png" alt="" />
+              </li>
+              <!-- end -->
+
+              <!-- team popup -->
+              <div class="team-popup two">
+                <button class="close-popup">
+                  <img src="/resources/images/icons/close-yellow.png" alt="" />
+                </button>
+                <h2>Samridhi Santoria</h2>
+                <h3>Sr. Content Writer</h3>
+                <p class="p">
+                  Anushka Basu is the Sr. Content Writer at TriosCo, who is a
+                  tech enthusiast and has deep knowledge of all things
+                  blockchain! She’s worked with many national and international
+                  brands in various arenas. What sets her apart in the crowd has
+                  to be her funky hair color and her constant chitter-chatter
+                  about cats.
+                </p>
+                <img
+                  src="/resources/images/icons/linkedin-logo-yellow.png"
+                  alt=""
+                  class="social"
+                />
+              </div>
+              <!-- end -->
+
+              <!-- member -->
+              <li class="teamOverview">
+                <img src="/resources/images/3.png" alt="" />
+              </li>
+              <!-- end -->
+
+              <!-- member -->
+              <li class="teamOverview">
+                <img src="/resources/images/4.png" alt="" />
+              </li>
+            </ul>
+            <!-- END -->
+            <br />
+            <!-- EMPLOYEES -->
+            <h2 class="employees-heading">— The TriosCo Tribe —</h2>
+            <ul>
+              <li>
+                <img src="/resources/images/1.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/2.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/3.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/4.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/1.png" alt="" />
+              </li>
+              <br />
+              <li>
+                <img src="/resources/images/1.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/2.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/3.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/4.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/1.png" alt="" />
+              </li>
+              <br />
+              <li>
+                <img src="/resources/images/1.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/2.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/3.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/4.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/1.png" alt="" />
+              </li>
+              <br />
+              <li>
+                <img src="/resources/images/1.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/2.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/3.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/4.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/1.png" alt="" />
+              </li>
+              <br />
+              <li>
+                <img src="/resources/images/1.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/2.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/3.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/4.png" alt="" />
+              </li>
+              <li>
+                <img src="/resources/images/1.png" alt="" />
+              </li>
+            </ul>
+            <!-- END -->
+          </div>
+        </section>
+        <!-- END -->
+
+        <!-- BLOGS -->
+        <section class="section-10" id="section-10">
           <div class="blogs">
-            <h1>The<br /><span>Blogs</span></h1>
+            <h1><br /><span>TriosCo-de</span></h1>
             <div class="blog-cards">
               <div class="card">
-                <a href="/blogs/pages/blog1.html">
-                  <img src="/resources/images/B2.jpg" alt="" width="100%" />
-                </a>
-                <h3>January 27, 2023</h3>
-                <h2>BE <br />INSPIRED</h2>
-                <a href="/blogs/pages/blog1.html">READ MORE</a>
-              </div>
-
-              <div class="card active">
                 <a href="/blogs/pages/blog1.html">
                   <img src="/resources/images/B1.jpg" alt="" width="100%" />
                 </a>
                 <h3>January 27, 2023</h3>
-                <h2>DESIGN LITERATURE</h2>
+                <h2>CRACK THE COLOR CODE!</h2>
+                <span>BRANDING · 4 min read</span>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Itaque debitis praesentium dolorum nisi quo.
+                  Colors are everywhere. They affect our emotions and behaviors
+                  ...
                 </p>
                 <a href="/blogs/pages/blog1.html">READ MORE</a>
               </div>
@@ -376,52 +683,136 @@
                   <img src="/resources/images/B3.jpg" alt="" width="100%" />
                 </a>
                 <h3>January 27, 2023</h3>
-                <h2>CONCEPT <br />DESIGN</h2>
+                <h2>DESIGN LITERATURE</h2>
+                <p>BRANDING · 2 min read</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Itaque debitis ...
+                </p>
                 <a href="/blogs/pages/blog1.html">READ MORE</a>
+              </div>
+
+              <div class="card">
+                <a href="/blogs/pages/blog3.html">
+                  <img src="/resources/images/B2.jpg" alt="" width="100%" />
+                </a>
+                <h3>January 27, 2023</h3>
+                <h2 style="font-size: 2rem">AMAZON CREATED THE GAME</h2>
+                <p>BRANDING · 2 min read</p>
+                <p>When we say the word ‘eCommerce’ what comes to mind? ...</p>
+                <a href="/blogs/pages/blog3.html">READ MORE</a>
               </div>
             </div>
           </div>
         </section>
+        <!-- END -->
 
-        <section class="section-8" id="section-8">
+        <!-- CONTACT -->
+        <section class="section-11" id="section-11">
           <div>
-            <h1>The<br /><span>Team</span></h1>
-            <img
-              src="/resources/images/team-Banner1.jpg"
-              class="team-desktop"
-              alt=""
-            />
-            <img
-              src="/resources/images/team-m.jpg"
-              class="team-mobile"
-              alt=""
-            />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad
-              excepturi minus repudiandae? Molestias, accusantium eaque.<br /><br />
-              Facilis harum rerum quae, voluptatum doloribus officiis. Quasi
-              autem enim neque ullam ipsum. Animi, distinctio? Necessitatibus ad
-              excepturi cumque placeat illum beatae voluptatum rerum voluptas?
-              Dolorum, ullam excepturi fuga deleniti blanditiis delectus ad<br /><br />
-              pariatur laboriosam odit accusamus minus ut illo esse facere unde
-              dicta magni! Nulla, blanditiis reprehenderit quos repellat id at
-              dolores, nobis eligendi rerum voluptatum deleniti cupiditate autem
-              a iste deserunt? Ducimus aliquid tenetur iusto. Facere eius, saepe
-              voluptate libero id modi minima?
-            </p>
+            <div class="part-1">
+              <div class="address">
+                <!-- <img src="/resources/images/address.png" alt="" /> -->
+                <video
+                  src="/resources/images/Contact Us Video (1).mp4"
+                  autoplay
+                  loop
+                ></video>
+              </div>
+              <div class="form">
+                <h2>Let's connect!</h2>
+                <p>We're always Happy to Hear from You.</p>
+                <br />
+                <form action="">
+                  <input type="text" placeholder="Name" required />
+                  <input type="email" placeholder="Email" required />
+                  <input type="tel" placeholder="Phone Number" required />
+                  <input
+                    type="text"
+                    placeholder="Message"
+                    required
+                    class="message"
+                  />
+                  <input type="submit" value="SUBMIT" class="submit-form" />
+                </form>
+              </div>
+            </div>
 
-            <ul>
-              <li><img src="/resources/images/1.png" alt="" /></li>
-              <li><img src="/resources/images/2.png" alt="" /></li>
-              <li><img src="/resources/images/3.png" alt="" /></li>
-              <li><img src="/resources/images/4.png" alt="" /></li>
-              <li><img src="/resources/images/5.png" alt="" /></li>
-              <li><img src="/resources/images/6.png" alt="" /></li>
-              <li><img src="/resources/images/7.png" alt="" /></li>
-              <li><img src="/resources/images/6.png" alt="" /></li>
-            </ul>
+            <div class="part-2">
+              <div class="footer">
+                <div>
+                  <ul class="box">
+                    <li>
+                      <img src="/resources/images/logo-yellow.png" alt="" />
+                    </li>
+                    <li>Create | Connect | Transcend</li>
+                    <br />
+                    <br />
+                    <br />
+                    <li>FOLLOW US</li>
+                    <br />
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="/resources/images/social-media/Instagram.webp"
+                          alt=""
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="/resources/images/social-media/Facebook.webp"
+                          alt=""
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="/resources/images/social-media/Linkedin.webp"
+                          alt=""
+                      /></a>
+                    </li>
+                  </ul>
+
+                  <div class="our-services">
+                    <ul>
+                      <li><h2>Our Services</h2></li>
+                      <li><a href="#">Branding</a></li>
+                      <li><a href="#">Media & Production</a></li>
+                      <li><a href="#">Ecommerce & Website</a></li>
+                      <li><a href="#">Research & Consultancy</a></li>
+                      <li><a href="#">Marketing</a></li>
+                    </ul>
+
+                    <ul style="margin-top: 2.2rem">
+                      <li><a href="#">Marketplace Advertising</a></li>
+                      <li><a href="#">Data Analytics</a></li>
+                      <li><a href="#">Operations</a></li>
+                      <li><a href="#">Growth Optimization</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="other-links">
+                    <ul>
+                      <li><h2>Other Links</h2></li>
+                      <li><a href="#">Copyright</a></li>
+                      <li><a href="#">Privacy policy</a></li>
+                      <li><a href="#">Terms of use</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Team</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="copyright">
+                  <p>
+                    Copyright ©
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    , All Rights Reserved TriosCo
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
+        <!-- END -->
       </main>
     </div>
   </body>
