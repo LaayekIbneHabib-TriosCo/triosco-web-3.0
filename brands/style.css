@@ -512,7 +512,8 @@ section {
 }
 
 .container .image-container {
-  columns: 2 25rem;
+  /* columns: 2 25rem; */
+  columns: 2;
   gap: 1.5rem;
 }
 
