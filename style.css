@@ -710,6 +710,22 @@ section {
   font-weight: 700;
 }
 
+.about-the-team a {
+  text-decoration: none;
+  color: var(--brown);
+  transition: 0.3s ease;
+}
+
+.lang-french,
+.lang-hindi {
+  display: none;
+}
+
+.about-the-team a:hover {
+  text-decoration: none;
+  color: var(--yellow);
+}
+
 .section-9 div ul {
   list-style: none;
   display: flex;
@@ -782,8 +798,7 @@ section {
   width: 2rem;
 }
 
-.one,
-.two {
+.one {
   display: none;
 }
 

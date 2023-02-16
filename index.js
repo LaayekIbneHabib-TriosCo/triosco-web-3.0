@@ -248,9 +248,9 @@ document.querySelector(".teamOverview1").addEventListener("click", () => {
   document.querySelector(".one").style.display = "block";
 });
 
-document.querySelector(".teamOverview2").addEventListener("click", () => {
-  document.querySelector(".two").style.display = "block";
-});
+// document.querySelector(".teamOverview2").addEventListener("click", () => {
+//   document.querySelector(".two").style.display = "block";
+// });
 
 //
 
@@ -262,3 +262,5 @@ for (i = 0; i < closebtns.length; i++) {
     this.parentElement.style.display = "none";
   });
 }
+
+// CHANGE LANG
