@@ -63,7 +63,7 @@ function myFunction() {
   observer1.observe(section1);
 }
 
-if (window.innerWidth > 400) {
+if (window.innerWidth > 450) {
   myFunction();
 }
 //
@@ -250,18 +250,18 @@ icons.forEach((icon, i) => {
 // END
 
 // TEAM OVERVIEW
-// Show the "one" element when any element with the class "teamOverview" is clicked
-var teamOverviews = document.querySelectorAll(".teamOverview");
-for (var i = 0; i < teamOverviews.length; i++) {
-  teamOverviews[i].addEventListener("click", function () {
-    document.querySelector(".one").style.display = "block";
-  });
-}
+// var teamOverviews = document.querySelectorAll(".teamOverview");
+// var one = document.querySelectorAll(".one");
 
-// Hide the parent element of the clicked "close-popup" element
-var closePopups = document.querySelectorAll(".close-popup");
-for (var j = 0; j < closePopups.length; j++) {
-  closePopups[j].addEventListener("click", function () {
-    this.parentElement.style.display = "none";
-  });
-}
+// for (var i = 0; i < teamOverviews.length; i++) {
+//   teamOverviews[i].addEventListener("click", function () {
+//     one[i].style.display = "block";
+//   });
+// }
+
+// var closePopups = document.querySelectorAll(".close-popup");
+// for (var j = 0; j < closePopups.length; j++) {
+//   closePopups[j].addEventListener("click", function () {
+//     this.parentElement.style.display = "none";
+//   });
+// }

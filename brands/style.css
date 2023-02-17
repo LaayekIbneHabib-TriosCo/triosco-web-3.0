@@ -345,6 +345,7 @@ section {
   font-size: 2rem;
   margin-top: 3rem;
   font-family: var(--primary-font);
+  text-transform: capitalize;
 }
 
 .brand-about-content {
@@ -362,6 +363,10 @@ section {
   column-gap: 3rem;
   list-style: none;
   margin-top: 6rem;
+}
+
+.content .brand-icons h2 {
+  text-transform: capitalize;
 }
 
 .grid-container {

@@ -256,6 +256,16 @@ section {
   position: fixed;
 }
 
+@media all and (max-width: 1130px) {
+  .back-button {
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+    position: fixed;
+    position: relative;
+  }
+}
+
 .blog {
   width: calc(100% - 20rem);
   font-family: var(--primary-font);
@@ -267,6 +277,29 @@ section {
   display: flex;
   align-items: center;
   gap: 5rem;
+}
+
+@media all and (max-width: 1130px) {
+  .blog {
+    width: calc(100% - 5rem);
+    font-family: var(--primary-font);
+    color: var(--brown);
+    font-size: 1.8rem;
+    margin-right: -3rem;
+  }
+
+  .part-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .part-1 div:nth-child(1) {
+    margin-top: 5rem;
+  }
+
+  .part-1 img {
+    width: 30rem;
+  }
 }
 
 .part-1 h1 {
@@ -296,6 +329,31 @@ section {
 .part-2 div ul li p {
   text-align: left;
   width: 40rem;
+}
+
+@media all and (max-width: 900px) {
+  /* .part-2 div {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  } */
+
+  .part-2 {
+    width: calc(100% - 5rem);
+    margin-left: 4rem;
+    padding-right: 1rem;
+  }
+
+  .part-2 div ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .letstalk {
+    display: none;
+  }
 }
 
 .part-3 {

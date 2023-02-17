@@ -805,8 +805,8 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 50rem;
-  height: 36.8rem;
+  max-width: 52rem;
+  height: 33.8rem;
   background-image: url(/resources/images/Pop-Up\ Box.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1181,8 +1181,19 @@ section {
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  margin-left: 2rem;
+  margin-left: 12rem;
   margin-top: -5rem;
+}
+
+@media all and (max-width: 900px) {
+  .section-11 div .part-2 .footer div .our-services ul li {
+    text-align: left;
+    margin-left: 5rem;
+  }
+}
+
+.section-11 div .part-2 .footer div .our-services img {
+  width: 1rem;
 }
 
 .section-11 div .part-2 .footer div .our-services ul li h2 {
@@ -1204,6 +1215,16 @@ section {
   display: flex;
   align-items: center;
   margin-top: -5rem;
+}
+
+@media all and (max-width: 900px) {
+  .section-11 div .part-2 .footer div .other-links ul li {
+    text-align: left;
+  }
+}
+
+.section-11 div .part-2 .footer div .other-links img {
+  width: 1rem;
 }
 
 .section-11 div .part-2 .footer div .other-links ul li h2 {
