@@ -31,6 +31,12 @@
   /* END */
 }
 
+@media all and (max-width: 900px) {
+  :root {
+    font-size: 8px;
+  }
+}
+
 /* BACKGROUND OVERLAY */
 :root:before {
   content: "";
@@ -272,15 +278,15 @@ section {
 }
 
 .connect .slide .item-1 {
-  background-image: url("/resources/images/connect/Research\ 1.jpg");
+  background-image: url("/resources/images/Research\ 1.jpg");
 }
 
 .connect .slide .item-2 {
-  background-image: url("/resources/images/connect/Marketing\ 1.jpg");
+  background-image: url("/resources/images/Marketing\ 1.jpg");
 }
 
 .connect .slide .item-3 {
-  background-image: url("/resources/images/connect/Marketplace\ 1.jpg");
+  background-image: url("/resources/images/Marketplace\ 1.jpg");
 }
 
 .transcend .slide .item-1 {
@@ -331,6 +337,7 @@ section {
   height: calc(100vh - 9.3rem);
   width: 100%;
   overflow-x: hidden;
+  padding: 3rem;
   /* overflow-y: scroll; */
 }
 
@@ -348,7 +355,7 @@ section {
 .section .slide .item .wrapper .content:first-of-type {
   width: 50%;
   float: right;
-  padding-top: 2rem;
+  padding-top: 7rem;
 }
 
 .section .slide .item .content:first-of-type .left-qoute {
@@ -370,6 +377,7 @@ section {
 .content .primary-service-list {
   display: flex;
   justify-content: flex-start;
+  gap: 1rem;
 }
 
 .service-list {
@@ -379,10 +387,6 @@ section {
   font-weight: 400;
   margin-left: 2rem;
   padding-left: 1rem;
-}
-
-.service-list:nth-child(2) {
-  margin-left: 10rem;
 }
 
 .service-list li {
@@ -418,11 +422,18 @@ section {
   color: var(--brown);
   font-weight: 700;
   margin-bottom: 2rem;
+  font-style: italic;
 }
 
 .center-slider-menu {
   display: flex;
   justify-content: center;
+}
+
+@media all and (max-width: 900px) {
+  .center-slider-menu {
+    margin-left: -2.5rem;
+  }
 }
 
 .row {
@@ -469,6 +480,11 @@ section {
     text-align: center;
     width: 80vw;
     margin-top: 5rem;
+  }
+
+  .quote img {
+    width: 10rem;
+    margin-top: -12rem;
   }
 }
 
@@ -566,6 +582,7 @@ section {
 .next {
   right: 0px;
   border-radius: 3px 0 0 3px;
+  right: 1.8rem;
 }
 
 .prev,
@@ -583,6 +600,18 @@ section {
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+}
+
+@media all and (max-width: 900px) {
+  .next {
+    right: 0rem;
+  }
+
+  .prev,
+  .next {
+    margin-top: 7rem;
+    font-size: 4rem;
+  }
 }
 
 .prev:hover,
@@ -617,6 +646,7 @@ section {
   overflow-x: scroll;
   margin-top: 0.5rem;
   padding-top: 1rem;
+  animation: move 1s ease 3;
 }
 
 .row:after {
@@ -633,14 +663,13 @@ section {
 }
 
 .column:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   margin-top: -1rem;
 }
 
 .demo {
   /* border-radius: 1rem; */
-  opacity: 0.6;
-
+  opacity: 0.2;
   height: 6rem;
   width: 10rem;
 }
@@ -648,6 +677,7 @@ section {
 .active,
 .demo:hover {
   opacity: 1;
+  transform: scale(1.1);
 }
 
 @media all and (min-width: 900px) {
@@ -863,7 +893,7 @@ section {
 
 .swipe-up-arrow {
   position: relative;
-  top: 5rem;
+  top: -1rem;
   width: 4rem;
   display: flex;
   align-self: center;

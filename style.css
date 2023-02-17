@@ -24,11 +24,18 @@
   --secondary-font: proxima-sera, sans-serif;
 
   font-size: 10px;
+  text-align: justify;
 
   /* BACKGROUND OVERLAY */
   --cursorX: 50vw;
   --cursorY: 50vh;
   /* END */
+}
+
+@media all and (max-width: 900px) {
+  :root {
+    font-size: 9px;
+  }
 }
 
 /* BACKGROUND EFFECT */
@@ -217,6 +224,12 @@ header ul li a .section-title {
     width: 8rem;
   }
 }
+
+@media all and (max-width: 400px) {
+  #button-close {
+    display: none;
+  }
+}
 /* END */
 
 main {
@@ -268,6 +281,8 @@ section {
   text-align: center;
   color: var(--brown);
   margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .section-1 p span {
@@ -361,11 +376,13 @@ section {
 
 .section-3 div figure {
   width: 60rem;
+  /* border: 1px solid red; */
 }
 
 .section-3 div article {
   height: 60rem;
   width: 70rem;
+  /* border: 1px solid red; */
   /* overflow-y: scroll; */
 }
 
@@ -424,8 +441,17 @@ section {
 
   .section-3 div article {
     max-width: 35rem;
-    margin-top: 5rem;
+    margin-top: -1rem;
     overflow-y: visible;
+  }
+
+  .section-3 div article ul {
+    display: flex;
+    justify-content: left;
+  }
+
+  .section-3 div article ul li img {
+    width: 10rem;
   }
 }
 /* END */
@@ -448,7 +474,7 @@ section {
   height: 100%;
   background-position: center;
   background-size: cover;
-  background-repeat: none;
+  background-repeat: no-repeat;
   transition: all 0.8s ease;
 }
 
@@ -560,15 +586,15 @@ section {
 
 /* SECTION 5 */
 .section-5 .slide .item:first-of-type {
-  background-image: url("/resources/images/connect/Research.jpg");
+  background-image: url("/resources/images/Research.jpg");
 }
 
 .section-5 .slide .item:nth-of-type(2) {
-  background-image: url("/resources/images/connect/Marketing.jpg");
+  background-image: url("/resources/images/Marketing.jpg");
 }
 
 .section-5 .slide .item:last-of-type {
-  background-image: url("/resources/images/connect/Marketplace.jpg");
+  background-image: url("/resources/images/Marketplace.jpg");
 }
 /* END */
 
@@ -681,6 +707,7 @@ section {
   font-weight: 500;
   line-height: 4.5rem;
   margin-left: 4.5rem;
+  text-align: left;
 }
 
 .section-9 div h1 span {
@@ -743,13 +770,14 @@ section {
 }
 
 .team-member-heading {
-  font-size: 3.5rem;
-  font-family: var(--primary-font);
+  font-size: 4.5rem;
+  font-family: var(--secondary-font);
   text-shadow: 2px 5px 1px var(--text-shadow);
   color: var(--brown);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 4.5rem;
   text-align: center;
+  font-style: italic;
 }
 
 .employer-heading {
@@ -845,7 +873,7 @@ section {
     font-family: var(--primary-font);
     font-size: 1.8rem;
     color: var(--brown);
-    margin-top: 5rem;
+    margin-top: -1.5rem;
     margin-left: 0;
     width: 35rem;
   }
@@ -865,8 +893,8 @@ section {
     color: var(--brown);
     font-weight: 500;
     line-height: 4.5rem;
-    margin-left: 4.5rem;
-    margin-bottom: 4.5rem;
+    margin-left: 1rem;
+    margin-bottom: 6.5rem;
   }
 
   .section-9 div h1 span {
@@ -898,6 +926,7 @@ section {
   color: var(--brown);
   font-weight: 500;
   line-height: 4.5rem;
+  margin-left: 7rem;
 }
 
 .blogs h1 span {
@@ -906,8 +935,9 @@ section {
 
 .blog-cards {
   display: flex;
-  justify-content: space-between;
-  /* justify-content: center; */
+  /* justify-content: space-between; */
+  justify-content: center;
+  gap: 8rem;
   flex-wrap: wrap;
   margin-top: 5rem;
 }
@@ -977,6 +1007,7 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 16rem;
+    margin-top: 1rem;
   }
 
   .blog-cards .card {
@@ -999,6 +1030,7 @@ section {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  margin-top: 3rem;
 }
 
 .section-11 div .part-1 {
@@ -1006,6 +1038,7 @@ section {
   flex-direction: row;
   justify-content: center;
   gap: 10rem;
+  margin-bottom: 10rem;
 }
 
 .section-11 div .part-1 .address {
@@ -1025,10 +1058,10 @@ section {
 }
 
 .section-11 div .part-1 .form p {
-  margin-top: -3rem;
+  margin-top: -16rem;
   font-family: var(--primary-font);
   color: var(--yellow);
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 500;
   font-style: italic;
 }
@@ -1036,7 +1069,9 @@ section {
 .section-11 div .part-1 .form form {
   display: flex;
   flex-direction: column;
-  gap: 4.5rem;
+  gap: 3rem;
+  position: relative;
+  top: -10rem;
 }
 
 .section-11 div .part-1 .form form input {
@@ -1048,7 +1083,7 @@ section {
 }
 
 .section-11 div .part-1 .form form .message {
-  height: 10rem;
+  padding-bottom: 10rem;
 }
 
 .section-11 div .part-1 .form form .submit-form {
@@ -1061,10 +1096,22 @@ section {
   font-weight: 700;
   cursor: pointer;
 }
+
+@media all and (max-width: 900px) {
+  .section-11 div .part-1 .form form {
+    top: 0rem;
+  }
+
+  .section-11 div .part-1 .form p {
+    font-size: 1.8rem;
+    position: relative;
+    top: -3rem;
+  }
+}
 /*  */
 
 .part-2 {
-  margin-top: 12rem;
+  margin-top: 15rem;
   width: 100%;
 }
 
@@ -1074,7 +1121,7 @@ section {
 
 .section-11 div .part-2 .footer {
   background-color: var(--yellow);
-  height: 40rem;
+  height: 30rem;
   background: url(/resources/images/imageedit_1_4684959322.png);
   z-index: 9;
   display: flex;
@@ -1106,19 +1153,19 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem;
+  padding: 2rem;
   box-shadow: 1px 1px 20px rgb(0, 0, 0, 0.5);
-  margin-top: -5rem;
-  margin-left: 5rem;
+  margin-top: -10rem;
+  margin-left: 10rem;
 }
 
 .section-11 div .part-2 .footer div .box li img {
-  width: 30rem;
+  width: 25rem;
 }
 
 .section-11 div .part-2 .footer div .box li {
   font-family: var(--primary-font);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .section-11 div .part-2 .footer div .box li a {
@@ -1126,7 +1173,7 @@ section {
 }
 
 .section-11 div .part-2 .footer div .box li a img {
-  width: 3rem;
+  width: 2.5rem;
 }
 
 .section-11 div .part-2 .footer div .our-services {
@@ -1135,6 +1182,7 @@ section {
   justify-content: center;
   gap: 5rem;
   margin-left: 2rem;
+  margin-top: -5rem;
 }
 
 .section-11 div .part-2 .footer div .our-services ul li h2 {
@@ -1149,12 +1197,13 @@ section {
   color: var(--white);
   font-family: var(--primary-font);
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .section-11 div .part-2 .footer div .other-links {
   display: flex;
   align-items: center;
+  margin-top: -5rem;
 }
 
 .section-11 div .part-2 .footer div .other-links ul li h2 {
@@ -1169,7 +1218,7 @@ section {
   color: var(--white);
   font-family: var(--primary-font);
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .section-11 div .part-2 .footer .copyright {
@@ -1208,7 +1257,7 @@ section {
 
   .section-11 div .part-2 .footer {
     background-color: var(--yellow);
-    height: 90rem;
+    height: 85rem;
     background: url(/resources/images/background-white-5%.png);
     z-index: 9;
     display: flex;
@@ -1235,7 +1284,7 @@ section {
     align-items: center;
     padding: 3rem;
     box-shadow: 1px 1px 20px rgb(0, 0, 0, 0.5);
-    margin-top: -5rem;
+    margin-top: -10rem;
     margin-left: 0rem;
     margin-bottom: 5rem;
   }
@@ -1245,8 +1294,17 @@ section {
     align-items: center;
     justify-content: center;
     gap: 0rem;
-    margin-left: 3rem;
-    margin-bottom: 5rem;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .section-11 div .part-2 .footer div .other-links {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    text-align: center;
   }
 }
 /* END */

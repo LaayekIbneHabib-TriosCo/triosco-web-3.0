@@ -35,31 +35,38 @@ const button_close = document.getElementById("button-close");
 const nav = document.querySelector(".nav");
 const section1 = document.querySelector(".section-1");
 
-const observer1 = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        nav.style.display = "none";
-        button_open.style.display = "block";
-        button_close.style.display = "none";
-        document.querySelector(".header").style.borderBottom = "0";
-        document.querySelector(".body").style.backgroundImage =
-          "url(/resources/images/background.png)";
-      } else {
-        nav.style.display = "block";
-        button_open.style.display = "none";
-        button_close.style.display = "block";
-        document.querySelector(".header").style.borderBottom =
-          "0.25rem solid var(--yellow)";
-        document.querySelector(".body").style.backgroundImage = "none";
-      }
-    });
-  },
-  { threshold: 1 }
-);
+//
+function myFunction() {
+  const observer1 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          nav.style.display = "none";
+          button_open.style.display = "block";
+          button_close.style.display = "none";
+          document.querySelector(".header").style.borderBottom = "0";
+          document.querySelector(".body").style.backgroundImage =
+            "url(/resources/images/background.png)";
+        } else {
+          nav.style.display = "block";
+          button_open.style.display = "none";
+          button_close.style.display = "block";
+          document.querySelector(".header").style.borderBottom =
+            "0.25rem solid var(--yellow)";
+          document.querySelector(".body").style.backgroundImage = "none";
+        }
+      });
+    },
+    { threshold: 1 }
+  );
 
-observer1.observe(section1);
-// END
+  observer1.observe(section1);
+}
+
+if (window.innerWidth > 400) {
+  myFunction();
+}
+//
 
 // SECTION TITLES
 const sections = [
@@ -243,24 +250,18 @@ icons.forEach((icon, i) => {
 // END
 
 // TEAM OVERVIEW
-
-document.querySelector(".teamOverview1").addEventListener("click", () => {
-  document.querySelector(".one").style.display = "block";
-});
-
-// document.querySelector(".teamOverview2").addEventListener("click", () => {
-//   document.querySelector(".two").style.display = "block";
-// });
-
-//
-
-var closebtns = document.getElementsByClassName("close-popup");
-var i;
-
-for (i = 0; i < closebtns.length; i++) {
-  closebtns[i].addEventListener("click", function () {
-    this.parentElement.style.display = "none";
+// Show the "one" element when any element with the class "teamOverview" is clicked
+var teamOverviews = document.querySelectorAll(".teamOverview");
+for (var i = 0; i < teamOverviews.length; i++) {
+  teamOverviews[i].addEventListener("click", function () {
+    document.querySelector(".one").style.display = "block";
   });
 }
 
-// CHANGE LANG
+// Hide the parent element of the clicked "close-popup" element
+var closePopups = document.querySelectorAll(".close-popup");
+for (var j = 0; j < closePopups.length; j++) {
+  closePopups[j].addEventListener("click", function () {
+    this.parentElement.style.display = "none";
+  });
+}

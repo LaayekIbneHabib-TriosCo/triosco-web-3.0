@@ -31,6 +31,12 @@
   /* END */
 }
 
+@media all and (max-width: 900px) {
+  :root {
+    font-size: 9px;
+  }
+}
+
 /* BACKGROUND OVERLAY */
 :root:before {
   content: "";
@@ -295,12 +301,22 @@ section {
   column-gap: 3rem;
   padding-top: 3.5rem;
   color: var(--brown);
+  padding-right: 3rem;
+  text-align: justify;
 }
 
 .content .brand-left,
 .content .grid-container {
   overflow-y: scroll;
   width: 40%;
+}
+
+@media all and (max-width: 900px) {
+  .content .brand-left,
+  .content .grid-container {
+    overflow-y: hidden;
+    width: 100%;
+  }
 }
 
 .brand-left {
@@ -383,6 +399,7 @@ section {
 
   .brand-heading {
     font-size: 6vw;
+    font-size: 3.5rem;
   }
 
   .brand-icons {
@@ -441,6 +458,20 @@ section {
   overflow: auto;
   /* background-color: rgba(0, 0, 0, 0.9); */
   background-color: var(--white);
+}
+
+@media all and (max-width: 900px) {
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0rem;
+    top: 10rem;
+    height: calc(100% - 10rem);
+    width: 100%;
+    overflow: auto;
+    background-color: var(--white);
+  }
 }
 
 .modal-content {
@@ -509,6 +540,15 @@ section {
   margin: 2rem auto;
   max-height: 55rem;
   overflow-y: scroll;
+}
+
+@media all and (max-width: 900px) {
+  .container {
+    max-width: 35rem;
+    margin-top: -15rem;
+    margin-right: 0.5rem;
+    overflow-y: visible;
+  }
 }
 
 .container .image-container {

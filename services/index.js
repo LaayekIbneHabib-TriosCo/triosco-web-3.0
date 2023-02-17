@@ -67,3 +67,10 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+
+//
+// const items = document.querySelectorAll(".column");
+
+// for (let i = 0; i < items.length; i++) {
+//   items[i].style.animationDelay = `${i * 0.5}s`;
+// }
