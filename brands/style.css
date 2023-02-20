@@ -278,7 +278,7 @@ section {
   height: calc(100vh - 9.3rem);
   flex-grow: 1;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
   scroll-snap-type: y mandatory;
   z-index: 1;
 }

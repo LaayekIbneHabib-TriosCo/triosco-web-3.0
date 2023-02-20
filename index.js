@@ -250,18 +250,28 @@ icons.forEach((icon, i) => {
 // END
 
 // TEAM OVERVIEW
-// var teamOverviews = document.querySelectorAll(".teamOverview");
-// var one = document.querySelectorAll(".one");
+let teamOverview = document.querySelectorAll(".teamOverview");
+let teamPopup = document.querySelectorAll(".team-popup");
+let closePopup = document.querySelectorAll(".close-popup");
 
-// for (var i = 0; i < teamOverviews.length; i++) {
-//   teamOverviews[i].addEventListener("click", function () {
-//     one[i].style.display = "block";
-//   });
-// }
+for (let i = 0; i < teamOverview.length; i++) {
+  teamOverview[i].addEventListener(
+    "click",
+    (function (index) {
+      return function () {
+        teamPopup[index].style.display = "block";
+      };
+    })(i)
+  );
 
-// var closePopups = document.querySelectorAll(".close-popup");
-// for (var j = 0; j < closePopups.length; j++) {
-//   closePopups[j].addEventListener("click", function () {
-//     this.parentElement.style.display = "none";
-//   });
-// }
+  if (closePopup[i]) {
+    closePopup[i].addEventListener(
+      "click",
+      (function (index) {
+        return function () {
+          teamPopup[index].style.display = "none";
+        };
+      })(i)
+    );
+  }
+}

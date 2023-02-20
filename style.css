@@ -24,7 +24,7 @@
   --secondary-font: proxima-sera, sans-serif;
 
   font-size: 10px;
-  text-align: justify;
+  /* text-align: justify; */
 
   /* BACKGROUND OVERLAY */
   --cursorX: 50vw;
@@ -780,7 +780,7 @@ section {
   font-style: italic;
 }
 
-.employer-heading {
+/* .employer-heading {
   color: var(--yellow);
   font-family: var(--primary-font);
   font-size: 2.5rem;
@@ -788,9 +788,9 @@ section {
   margin-top: 5rem;
   font-style: italic;
   font-weight: 800;
-}
+} */
 
-.employees-heading {
+.heading {
   color: var(--yellow);
   font-family: var(--primary-font);
   font-size: 2.5rem;
@@ -811,6 +811,8 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: var(--primary-font);
+  /*  */
+  display: none;
 }
 
 .close-popup {
@@ -824,10 +826,6 @@ section {
 
 .close-popup img {
   width: 2rem;
-}
-
-.one {
-  display: none;
 }
 
 .team-popup h2 {
@@ -903,6 +901,68 @@ section {
 
   .section-9 div ul li img {
     width: 15rem;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .team-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 38rem;
+    height: 24.7rem;
+    background-image: url(/resources/images/Pop-Up\ Box.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--primary-font);
+    /*  */
+    display: none;
+  }
+  .team-popup h2 {
+    color: var(--yellow);
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: italic;
+    margin-top: -1rem;
+  }
+
+  .team-popup h3 {
+    color: var(--yellow);
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: -0.5rem;
+    border-bottom: 1px solid var(--yellow);
+  }
+
+  .team-popup .p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+
+  .team-popup .social {
+    width: 3rem;
+    margin-top: 2rem;
+  }
+
+  .close-popup {
+    float: right;
+    background: transparent;
+    border: none;
+    margin-top: 0rem;
+    margin-right: 0rem;
+    cursor: pointer;
+  }
+
+  .close-popup img {
+    width: 1.5rem;
+  }
+
+  .team-popup .social {
+    width: 2rem;
+    margin-top: 1rem;
   }
 }
 /* END */
@@ -1045,6 +1105,72 @@ section {
   max-width: 50rem;
 }
 
+.section-11 div .part-1 .address ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  font-family: var(--primary-font);
+  color: var(--brown);
+  font-size: 1.5rem;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.section-11 div .part-1 .address ul li {
+  border-left: 2px solid var(--yellow);
+  padding-left: 1.5rem;
+}
+
+.section-11 div .part-1 .address ul li div {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-11 div .part-1 .address ul li a {
+  text-decoration: none;
+  color: var(--brown);
+}
+
+.section-11 div .part-1 .address ul img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+@media all and (max-width: 900px) {
+  .section-11 div .part-1 .address ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    font-family: var(--primary-font);
+    color: var(--brown);
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  .section-11 div .part-1 .address ul li {
+    border-left: none;
+    border-bottom: 2px solid var(--yellow);
+    padding-bottom: 1.5rem;
+
+    padding-left: 0rem;
+  }
+
+  .section-11 div .part-1 .address ul li div {
+    flex-direction: column;
+  }
+
+  .section-11 div .part-1 .address ul .last-dance {
+    border: none;
+  }
+
+  .section-11 div .part-1 .address ul li div .phone-class {
+    margin-left: 1rem;
+  }
+}
+
 .section-11 div .part-1 .form {
   max-width: 50rem;
 }
@@ -1058,7 +1184,7 @@ section {
 }
 
 .section-11 div .part-1 .form p {
-  margin-top: -16rem;
+  margin-top: -29rem;
   font-family: var(--primary-font);
   color: var(--yellow);
   font-size: 2rem;
@@ -1071,7 +1197,7 @@ section {
   flex-direction: column;
   gap: 3rem;
   position: relative;
-  top: -10rem;
+  top: -20rem;
 }
 
 .section-11 div .part-1 .form form input {
@@ -1098,6 +1224,9 @@ section {
 }
 
 @media all and (max-width: 900px) {
+  .section-11 div .part-1 .form {
+    margin-top: 50rem;
+  }
   .section-11 div .part-1 .form form {
     top: 0rem;
   }

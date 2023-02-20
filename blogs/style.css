@@ -246,7 +246,7 @@ section {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .back-button {
@@ -332,15 +332,15 @@ section {
 }
 
 @media all and (max-width: 900px) {
-  /* .part-2 div {
-    padding-left: 7rem;
-    padding-right: 7rem;
-  } */
-
   .part-2 {
-    width: calc(100% - 5rem);
-    margin-left: 4rem;
+    width: 100%;
+    margin-left: 0rem;
     padding-right: 1rem;
+    overflow: hidden;
+  }
+
+  .part-2 div ul {
+    overflow: hidden;
   }
 
   .part-2 div ul li {
@@ -348,7 +348,16 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    font-size: 1.5rem;
+  }
+
+  .part-2 div ul li img {
+    margin-bottom: 2rem;
+  }
+
+  .part-2 div ul li p {
+    text-align: left;
+    width: 28rem;
   }
 
   .letstalk {
@@ -370,6 +379,22 @@ section {
 
 .part-3 .inner-part img {
   width: 50rem;
+}
+
+@media all and (max-width: 900px) {
+  .part-3 {
+    margin-top: -10rem;
+  }
+
+  .part-3 .inner-part {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .part-3 .inner-part img {
+    width: 30rem;
+    margin-top: 2rem;
+  }
 }
 
 .part-4 {
@@ -426,4 +451,25 @@ section {
 
 .part-4 .next-part .heading {
   color: var(--brown);
+}
+
+@media all and (max-width: 900px) {
+  .part-4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .part-4 .inner-part p {
+    width: 100%;
+  }
+
+  .part-4 .next-part .heading {
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  .part-4 .next-part ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
