@@ -35,7 +35,6 @@ const button_close = document.getElementById("button-close");
 const nav = document.querySelector(".nav");
 const section1 = document.querySelector(".section-1");
 
-//
 function myFunction() {
   const observer1 = new IntersectionObserver(
     (entries) => {
@@ -57,13 +56,13 @@ function myFunction() {
         }
       });
     },
-    { threshold: 1 }
+    { threshold: 0.5 }
   );
 
   observer1.observe(section1);
 }
 
-if (window.innerWidth > 450) {
+if (window.innerWidth > 500) {
   myFunction();
 }
 //
@@ -126,7 +125,7 @@ sections.forEach((section, index) => {
         }
       });
     },
-    { threshold: 1 }
+    { threshold: 0.5 }
   );
   observer.observe(document.querySelector(section.class));
 });

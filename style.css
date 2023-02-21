@@ -34,7 +34,7 @@
 
 @media all and (max-width: 900px) {
   :root {
-    font-size: 9px;
+    font-size: 10px;
   }
 }
 
@@ -418,7 +418,7 @@ section {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .section-3 div article ul li img {
