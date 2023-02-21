@@ -800,6 +800,10 @@ section {
   font-weight: 800;
 }
 
+.teamOverview {
+  cursor: pointer;
+}
+
 .team-popup {
   position: absolute;
   top: 50%;
@@ -997,13 +1001,13 @@ section {
   display: flex;
   /* justify-content: space-between; */
   justify-content: center;
-  gap: 8rem;
+  gap: 5rem;
   flex-wrap: wrap;
   margin-top: 5rem;
 }
 
 .blog-cards .card {
-  width: 30rem;
+  max-width: 27rem;
   height: 20rem;
   cursor: pointer;
   margin: 2rem;
@@ -1012,9 +1016,7 @@ section {
 }
 
 .blog-cards .card:hover {
-  width: 40rem;
-  height: 27rem;
-  margin-top: -4rem;
+  margin-top: -0.1rem;
 }
 
 .blog-cards .card h3 {
@@ -1066,7 +1068,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16rem;
+    gap: 20rem;
     margin-top: 1rem;
   }
 
@@ -1102,28 +1104,61 @@ section {
 }
 
 .section-11 div .part-1 .address {
-  max-width: 50rem;
+  max-width: 40rem;
+  display: flex;
 }
 
 .section-11 div .part-1 .address ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  justify-content: center;
+  gap: 2rem;
   font-family: var(--primary-font);
   color: var(--brown);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: left;
   margin-top: 1rem;
+  width: 55rem;
+  margin-left: -6rem;
+}
+
+@media all and (max-width: 900px) {
+  .section-11 div .part-1 .address ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-family: var(--primary-font);
+    color: var(--brown);
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 1rem;
+    width: 34rem;
+    margin-left: 0rem;
+  }
 }
 
 .section-11 div .part-1 .address ul li {
   border-left: 2px solid var(--yellow);
-  padding-left: 1.5rem;
+  padding-left: 1rem;
+}
+
+.section-11 div .part-1 .address ul li h2 {
+  color: var(--yellow);
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+@media all and (min-width: 900px) {
+  .section-11 div .part-1 .address ul .hyd {
+    border: 0px solid var(--yellow);
+  }
 }
 
 .section-11 div .part-1 .address ul li div {
   display: flex;
   flex-direction: row;
+  margin-top: 1rem;
 }
 
 .section-11 div .part-1 .address ul li a {
@@ -1173,6 +1208,14 @@ section {
 
 .section-11 div .part-1 .form {
   max-width: 50rem;
+  margin-left: 10rem;
+}
+
+@media all and (max-width: 900px) {
+  .section-11 div .part-1 .form {
+    max-width: 50rem;
+    margin-left: 0rem;
+  }
 }
 
 /*  */
@@ -1184,7 +1227,7 @@ section {
 }
 
 .section-11 div .part-1 .form p {
-  margin-top: -29rem;
+  margin-top: -14rem;
   font-family: var(--primary-font);
   color: var(--yellow);
   font-size: 2rem;
@@ -1197,7 +1240,7 @@ section {
   flex-direction: column;
   gap: 3rem;
   position: relative;
-  top: -20rem;
+  top: -8rem;
 }
 
 .section-11 div .part-1 .form form input {

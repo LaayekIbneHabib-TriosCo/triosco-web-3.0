@@ -478,7 +478,7 @@
           <div>
             <h1>Humans of<br /><span>TriosCo</span></h1>
             <div class="about-the-team">
-              <img src="/resources/images/Group Picture.png" alt="" />
+              <img src="/resources/images/Group Picture (1).png" alt="" />
               <p class="lang-english">
                 Our team is made up of people from all walks of life, including
                 industry leaders, IT enthusiasts, data-driven strategists, and
@@ -500,7 +500,6 @@
 
             <!-- TEAM -->
             <h2 class="team-member-heading">— The TriosCo Tribe —</h2>
-            <!-- <h2 class="heading">— The TriosCo Tribe —</h2> -->
             <ul>
               <li class="teamOverview">
                 <img src="/resources/images/team-2/Swati Goenka.webp" alt="" />
@@ -1303,6 +1302,51 @@
 
               <!-- member -->
               <li class="teamOverview">
+                <img
+                  src="/resources/images/team-2/Anil Kumar Bagadia.webp"
+                  alt=""
+                />
+              </li>
+              <div class="team-popup">
+                <button class="close-popup">
+                  <img src="/resources/images/icons/close-yellow.png" alt="" />
+                </button>
+                <h2>Anil Kumar Bagadia</h2>
+                <h3>Supply Chain Associate</h3>
+                <p class="p">About Anil Kumar Bagadia</p>
+                <a href="#" target="_blank">
+                  <img
+                    src="/resources/images/icons/linkedin-logo-yellow.png"
+                    alt=""
+                    class="social"
+                  />
+                </a>
+              </div>
+              <!-- end -->
+
+              <!-- member -->
+              <li class="teamOverview">
+                <img src="/resources/images/team-2/Mohor Kar.webp" alt="" />
+              </li>
+              <div class="team-popup">
+                <button class="close-popup">
+                  <img src="/resources/images/icons/close-yellow.png" alt="" />
+                </button>
+                <h2>Mohor Kar</h2>
+                <h3>Content Writer</h3>
+                <p class="p">About Mohor Kar</p>
+                <a href="#" target="_blank">
+                  <img
+                    src="/resources/images/icons/linkedin-logo-yellow.png"
+                    alt=""
+                    class="social"
+                  />
+                </a>
+              </div>
+              <!-- end -->
+
+              <!-- member -->
+              <li class="teamOverview">
                 <img src="/resources/images/team-2/Radhika Mohta.webp" alt="" />
               </li>
               <div class="team-popup">
@@ -1391,28 +1435,22 @@
           <div>
             <div class="part-1">
               <div class="address">
-                <!-- <img src="/resources/images/address.png" alt="" /> -->
-                <video
-                  src="/resources/images/Contact Us Video (1).mp4"
-                  autoplay
-                  loop
-                ></video>
+                <figure>
+                  <video width="100%" height="100%" autoplay muted loop>
+                    <source
+                      src="/resources/images/Contact Us Video (1).mp4"
+                      type="video/mp4"
+                    />
+                    <source
+                      src="/resources/images/Contact Us Video (1).mp4"
+                      type="video/ogg"
+                    />
+                  </video>
+                </figure>
                 <ul>
                   <!--  -->
-                  <li>
-                    <div>
-                      <img
-                        src="/resources/images/icons/maps-and-flags.png"
-                        alt=""
-                      />
-                      <p>
-                        Magna Park View Towers, 3rd Floor, Telecom Nagar,
-                        Gachibowli, Hyderabad, Telangana 500 033
-                      </p>
-                    </div>
-                  </li>
-                  <!--  -->
-                  <li>
+                  <li class="hyd">
+                    <h2>New York Office</h2>
                     <div>
                       <img
                         src="/resources/images/icons/maps-and-flags.png"
@@ -1421,14 +1459,14 @@
                       <p>27B Dublon Ct Farmingdale, NY 11735</p>
                     </div>
 
-                    <div>
+                    <div style="margin-top: 1rem">
                       <img src="/resources/images/icons/email.png" alt="" />
                       <a href="mailto:hello@triosco.com" target="_blank"
                         >hello@triosco.com</a
                       >
                     </div>
 
-                    <div style="margin-top: 1.5rem">
+                    <div style="margin-top: 1rem">
                       <img
                         src="/resources/images/icons/phone-call.png"
                         alt=""
@@ -1441,7 +1479,22 @@
                     </div>
                   </li>
                   <!--  -->
+                  <li>
+                    <h2>Hyderabad Office</h2>
+                    <div>
+                      <img
+                        src="/resources/images/icons/maps-and-flags.png"
+                        alt=""
+                      />
+                      <p>
+                        Magna Park View Towers, 3rd Floor, Telecom Nagar,
+                        Gachibowli, Hyderabad, Telangana 500 033
+                      </p>
+                    </div>
+                  </li>
+                  <!--  -->
                   <li class="last-dance">
+                    <h2>Kolkata Office</h2>
                     <div>
                       <img
                         src="/resources/images/icons/maps-and-flags.png"
@@ -1459,18 +1512,30 @@
                 <h2>Let's connect!</h2>
                 <p>We're always Happy to Hear from You.</p>
                 <!-- <br /> -->
-                <form action="https://formspree.io/f/xgebkkqw" method="POST">
-                  <input type="text" name="text" placeholder="Name" required />
+                <form
+                  action="https://formspree.io/f/xgebkkqw"
+                  method="POST"
+                  id="contact-us"
+                >
+                  <input
+                    type="text"
+                    name="text"
+                    placeholder="Name"
+                    class="name"
+                    required
+                  />
                   <input
                     type="email"
                     name="email"
                     placeholder="Email"
+                    class="email"
                     required
                   />
                   <input
                     type="tel"
                     name="numbers"
                     placeholder="Phone Number"
+                    class="phone"
                     required
                   />
                   <input
@@ -1499,17 +1564,21 @@
                     <li>FOLLOW US</li>
                     <br />
                     <li>
-                      <a href="#"
+                      <a
+                        href="https://www.instagram.com/triosco_media/"
+                        target="_blank"
                         ><img
                           src="/resources/images/social-media/Instagram.webp"
                           alt=""
                       /></a>
-                      <a href="#"
+                      <a href="https://www.facebook.com/TriosCo" target="_blank"
                         ><img
                           src="/resources/images/social-media/Facebook.webp"
                           alt=""
                       /></a>
-                      <a href="#"
+                      <a
+                        href="https://in.linkedin.com/company/triosco?trk=public_profile_topcard-current-company"
+                        target="_blank"
                         ><img
                           src="/resources/images/social-media/Linkedin.webp"
                           alt=""
@@ -1610,7 +1679,7 @@
                   <div class="other-links">
                     <ul>
                       <li><h2>Other Links</h2></li>
-                      <li>
+                      <!-- <li>
                         <a href="#"
                           ><img
                             src="/resources/images/icons/Triangle Pointer.png"
@@ -1618,9 +1687,9 @@
                           />
                           Copyright</a
                         >
-                      </li>
+                      </li> -->
                       <li>
-                        <a href="#"
+                        <a href="/privacy-policy.html"
                           ><img
                             src="/resources/images/icons/Triangle Pointer.png"
                             alt=""
@@ -1629,7 +1698,7 @@
                         >
                       </li>
                       <li>
-                        <a href="#"
+                        <a href="/terms-of-use.html"
                           ><img
                             src="/resources/images/icons/Triangle Pointer.png"
                             alt=""
@@ -1638,7 +1707,7 @@
                         >
                       </li>
                       <li>
-                        <a href="#"
+                        <a href="#contact-us"
                           ><img
                             src="/resources/images/icons/Triangle Pointer.png"
                             alt=""
@@ -1647,7 +1716,7 @@
                         >
                       </li>
                       <li>
-                        <a href="#"
+                        <a href="#section-9"
                           ><img
                             src="/resources/images/icons/Triangle Pointer.png"
                             alt=""
@@ -1660,11 +1729,11 @@
                 </div>
                 <div class="copyright">
                   <p>
-                    Copyright ©
+                    ©
                     <script>
                       document.write(new Date().getFullYear());
                     </script>
-                    , All Rights Reserved TriosCo
+                    TriosCo, All Rights Reserved
                   </p>
                 </div>
               </div>
