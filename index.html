@@ -512,7 +512,7 @@
                 <a href="#" onclick="displaySpanish()">Spanish</a> |
                 <a href="#" onclick="displayFrench()">French</a> |
                 <a href="#" onclick="displayHindi()">Hindi</a> |
-                <a href="#">Bengali</a> |
+                <a href="#" onclick="displayBengali()">Bengali</a> |
                 <a href="#" onclick="displayGujarati()">Gujarati</a>
                 <br /><br />
               </p>
@@ -534,7 +534,7 @@
                 <a href="#" onclick="displaySpanish()">Spanish</a> |
                 <a href="#" onclick="displayFrench()">French</a> |
                 <a href="#" onclick="displayHindi()">Hindi</a> |
-                <a href="#">Bengali</a> |
+                <a href="#" onclick="displayBengali()">Bengali</a> |
                 <a href="#" onclick="displayGujarati()">Gujarati</a>
                 <br /><br />
               </p>
@@ -558,7 +558,7 @@
                 <a href="#" onclick="displaySpanish()">Spanish</a> |
                 <a href="#" onclick="displayFrench()">French</a> |
                 <a href="#" onclick="displayHindi()">Hindi</a> |
-                <a href="#">Bengali</a> |
+                <a href="#" onclick="displayBengali()">Bengali</a> |
                 <a href="#" onclick="displayGujarati()">Gujarati</a>
                 <br /><br />
               </p>
@@ -580,7 +580,7 @@
                 <a href="#" onclick="displaySpanish()">Spanish</a> |
                 <a href="#" onclick="displayFrench()">French</a> |
                 <a href="#" onclick="displayHindi()">Hindi</a> |
-                <a href="#">Bengali</a> |
+                <a href="#" onclick="displayBengali()">Bengali</a> |
                 <a href="#" onclick="displayGujarati()">Gujarati</a>
                 <br /><br />
               </p>
@@ -602,7 +602,7 @@
                 <a href="#" onclick="displaySpanish()">Spanish</a> |
                 <a href="#" onclick="displayFrench()">French</a> |
                 <a href="#" onclick="displayHindi()">Hindi</a> |
-                <a href="#">Bengali</a> |
+                <a href="#" onclick="displayBengali()">Bengali</a> |
                 <a href="#" onclick="displayGujarati()">Gujarati</a>
                 <br /><br />
               </p>
@@ -624,7 +624,27 @@
                 <a href="#" onclick="displaySpanish()">Spanish</a> |
                 <a href="#" onclick="displayFrench()">French</a> |
                 <a href="#" onclick="displayHindi()">Hindi</a> |
-                <a href="#">Bengali</a> |
+                <a href="#" onclick="displayBengali()">Bengali</a> |
+                <a href="#" onclick="displayGujarati()">Gujarati</a>
+                <br /><br />
+              </p>
+
+              <p id="lang-bengali">
+                আমাদের টিম গঠিত হয়েছে সকল ধরণের মানুষ কে নিয়ে: সেখানে আছে আইটি
+                উৎসাহি, ডেটা স্ট্র্যাটেজিস্ট ও সর্বোপরি উন্নত চিন্তাধারার
+                মানুষজন। আমাদের লক্ষ্য হচ্ছে সৎ এবং সহযোগিতার দ্বারা দীর্ঘ দিনের
+                পার্টনারশীপ গড়ে তোলা।<br /><br />
+                আমরা একটি টীম হিসেবে নতুন ও ভিন্ন চিন্তাধারা ও দৃষ্টিকোণকে
+                স্বাগত জানাই। আমরা দৃঢ় ভাবে একটি অন্তর্ভুক্ত পরিবেশ গড়ে তোলার
+                চেষ্টা করেছি, যেখানে সবাই নিজেকে মূল্যবান ও শ্রদ্ধেয় মনে করার
+                সহযোগিতা পেয়েছে।<br /><br />
+                <span>LANGUAGES WE SPEAK:</span><br />
+                <a href="#" onclick="displayEnglish()">English</a> |
+                <a href="#" onclick="displayGerman()">German</a> |
+                <a href="#" onclick="displaySpanish()">Spanish</a> |
+                <a href="#" onclick="displayFrench()">French</a> |
+                <a href="#" onclick="displayHindi()">Hindi</a> |
+                <a href="#" onclick="displayBengali()">Bengali</a> |
                 <a href="#" onclick="displayGujarati()">Gujarati</a>
                 <br /><br />
               </p>
@@ -647,6 +667,9 @@
                 display: none;
               }
               #lang-gujarati {
+                display: none;
+              }
+              #lang-bengali {
                 display: none;
               }
             </style>
@@ -1884,15 +1907,17 @@
                     </ul>
                   </div>
                 </div>
-                <div class="copyright">
-                  <p>
-                    ©
-                    <script>
-                      document.write(new Date().getFullYear());
-                    </script>
-                    TriosCo, All Rights Reserved
-                  </p>
-                </div>
+                <a href="/copyright">
+                  <div class="copyright">
+                    <p>
+                      ©
+                      <script>
+                        document.write(new Date().getFullYear());
+                      </script>
+                      TriosCo, All Rights Reserved
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
