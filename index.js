@@ -56,7 +56,7 @@ function myFunction() {
         }
       });
     },
-    { threshold: 0.5 }
+    { threshold: 1 }
   );
 
   observer1.observe(section1);
@@ -125,7 +125,7 @@ sections.forEach((section, index) => {
         }
       });
     },
-    { threshold: 0.5 }
+    { threshold: 1 }
   );
   observer.observe(document.querySelector(section.class));
 });
