@@ -10,9 +10,9 @@
   -moz-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 :root {
   --yellow: #f2b400;
@@ -169,6 +169,10 @@ header ul li a span {
   animation: navAnimation 0.5s forwards;
 }
 
+.nav::-webkit-scrollbar {
+  display: none;
+}
+
 @keyframes navAnimation {
   0% {
     margin-left: -100px;
@@ -237,6 +241,10 @@ main {
   z-index: 1;
 }
 
+main::-webkit-scrollbar {
+  display: none;
+}
+
 section {
   height: calc(100vh - 6rem);
   width: 100%;
@@ -249,6 +257,10 @@ section {
   display: flex;
   justify-content: flex-end;
   justify-content: center;
+}
+
+.section::-webkit-scrollbar {
+  display: none;
 }
 
 .section .slide {
@@ -278,10 +290,26 @@ section {
   height: calc(100vh - 9.3rem);
   flex-grow: 1;
   overflow-x: hidden;
-  /* overflow-y: hidden; */
-  overflow-y: scroll;
+  overflow-y: hidden;
+  /* overflow-y: scroll; */
   scroll-snap-type: y mandatory;
   z-index: 1;
+}
+
+@media all and (max-width: 900px) {
+  .section .slide .item .wrapper {
+    height: calc(100vh - 9.3rem);
+    flex-grow: 1;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    z-index: 1;
+  }
+}
+
+.section .slide .item .wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .section .slide .item .wrapper a img {
@@ -308,7 +336,7 @@ section {
 
 .content .brand-left,
 .content .grid-container {
-  overflow-y: scroll;
+  overflow-y: hidden;
   width: 40%;
 }
 
@@ -325,6 +353,14 @@ section {
   width: 40%;
   height: 100vh;
   /* background-color: red; */
+}
+
+.brand-left::-webkit-scrollbar {
+  display: none;
+}
+
+.brand-left section::-webkit-scrollbar {
+  display: none;
 }
 
 .brand-left .brand-heading {
@@ -458,7 +494,7 @@ section {
   position: fixed;
   z-index: 1;
   left: 10rem;
-  top: 10rem;
+  top: 5rem;
   height: calc(100% - 10rem);
   width: calc(100% - 20rem);
   overflow: auto;
@@ -494,8 +530,8 @@ section {
   height: auto;
   /* max-width: 100%;
   max-height: 100%; */
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 60%;
+  max-height: 60%;
 }
 
 .close {
