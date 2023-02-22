@@ -83,11 +83,11 @@ body {
   color: var(--brown);
 }
 
-@media all and (max-width: 374px), (max-height: 635px) {
+/* @media all and (max-width: 374px), (max-height: 635px) {
   .disclamer {
     display: block;
   }
-}
+} */
 
 .flex-container {
   display: flex;
@@ -95,11 +95,11 @@ body {
   margin: 0 1rem 0;
 }
 
-@media all and (max-width: 374px), (max-height: 635px) {
+/* @media all and (max-width: 374px), (max-height: 635px) {
   .flex-container {
     display: none;
   }
-}
+} */
 
 header {
   height: 6rem;
