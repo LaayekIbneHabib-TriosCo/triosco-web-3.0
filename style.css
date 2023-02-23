@@ -24,7 +24,6 @@
   --secondary-font: proxima-sera, sans-serif;
 
   font-size: 10px;
-  /* text-align: justify; */
 
   /* BACKGROUND OVERLAY */
   --cursorX: 50vw;
@@ -691,7 +690,7 @@ section {
 .section-9 {
   display: flex;
   justify-content: right;
-  text-align: justify;
+  text-align: left;
 }
 
 .section-9 div {
@@ -731,7 +730,8 @@ section {
   font-size: 1.8rem;
   color: var(--brown);
   margin-top: 5rem;
-  text-align: justify;
+  /* text-align: justify; */
+  text-align: left;
 }
 
 .section-9 div p span {
