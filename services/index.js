@@ -69,8 +69,3 @@ function showSlides(n) {
 }
 
 //
-// const items = document.querySelectorAll(".column");
-
-// for (let i = 0; i < items.length; i++) {
-//   items[i].style.animationDelay = `${i * 0.5}s`;
-// }
