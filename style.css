@@ -150,9 +150,7 @@ header ul li a span {
 }
 
 header ul li a .section-title {
-  font-family: var(--secondary-font);
-  font-style: italic;
-  text-shadow: 2px 5px 1px var(--text-shadow);
+  font-family: var(--primary-font);
   color: var(--yellow);
   font-weight: 500;
 }
