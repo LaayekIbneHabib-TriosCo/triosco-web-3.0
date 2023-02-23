@@ -723,6 +723,7 @@ section {
 
 .about-the-team img {
   width: 40rem;
+  height: 35rem;
 }
 
 .section-9 div p {
@@ -861,7 +862,7 @@ section {
   margin-top: 2rem;
 }
 
-@media all and (max-width: 1300px) {
+@media all and (max-width: 900px) {
   .about-the-team {
     display: flex;
     flex-direction: column;
