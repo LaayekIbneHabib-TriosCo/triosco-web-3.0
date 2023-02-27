@@ -285,6 +285,7 @@ function displayEnglish(event) {
   document.getElementById("lang-gujarati").style.display = "none";
   document.getElementById("lang-spanish").style.display = "none";
   document.getElementById("lang-bengali").style.display = "none";
+  document.getElementById("lang-telugu").style.display = "none";
 }
 function displayGerman(event) {
   document.getElementById("lang-english").style.display = "none";
@@ -294,6 +295,7 @@ function displayGerman(event) {
   document.getElementById("lang-gujarati").style.display = "none";
   document.getElementById("lang-spanish").style.display = "none";
   document.getElementById("lang-bengali").style.display = "none";
+  document.getElementById("lang-telugu").style.display = "none";
 }
 function displaySpanish(event) {
   document.getElementById("lang-english").style.display = "none";
@@ -303,6 +305,7 @@ function displaySpanish(event) {
   document.getElementById("lang-gujarati").style.display = "none";
   document.getElementById("lang-spanish").style.display = "block";
   document.getElementById("lang-bengali").style.display = "none";
+  document.getElementById("lang-telugu").style.display = "none";
 }
 function displayFrench(event) {
   document.getElementById("lang-english").style.display = "none";
@@ -312,6 +315,7 @@ function displayFrench(event) {
   document.getElementById("lang-gujarati").style.display = "none";
   document.getElementById("lang-spanish").style.display = "none";
   document.getElementById("lang-bengali").style.display = "none";
+  document.getElementById("lang-telugu").style.display = "none";
 }
 function displayHindi(event) {
   document.getElementById("lang-english").style.display = "none";
@@ -321,6 +325,7 @@ function displayHindi(event) {
   document.getElementById("lang-gujarati").style.display = "none";
   document.getElementById("lang-spanish").style.display = "none";
   document.getElementById("lang-bengali").style.display = "none";
+  document.getElementById("lang-telugu").style.display = "none";
 }
 function displayGujarati(event) {
   document.getElementById("lang-english").style.display = "none";
@@ -330,6 +335,7 @@ function displayGujarati(event) {
   document.getElementById("lang-gujarati").style.display = "block";
   document.getElementById("lang-spanish").style.display = "none";
   document.getElementById("lang-bengali").style.display = "none";
+  document.getElementById("lang-telugu").style.display = "none";
 }
 function displayBengali(event) {
   document.getElementById("lang-english").style.display = "none";
@@ -339,5 +345,16 @@ function displayBengali(event) {
   document.getElementById("lang-gujarati").style.display = "none";
   document.getElementById("lang-spanish").style.display = "none";
   document.getElementById("lang-bengali").style.display = "block";
+  document.getElementById("lang-telugu").style.display = "none";
+}
+function displayTelugu(event) {
+  document.getElementById("lang-english").style.display = "none";
+  document.getElementById("lang-german").style.display = "none";
+  document.getElementById("lang-french").style.display = "none";
+  document.getElementById("lang-hindi").style.display = "none";
+  document.getElementById("lang-gujarati").style.display = "none";
+  document.getElementById("lang-spanish").style.display = "none";
+  document.getElementById("lang-bengali").style.display = "none";
+  document.getElementById("lang-telugu").style.display = "block";
 }
 //

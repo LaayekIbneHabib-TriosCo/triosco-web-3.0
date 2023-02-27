@@ -428,6 +428,10 @@ section {
 .center-slider-menu {
   display: flex;
   justify-content: center;
+  /*  */
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 100%;
 }
 
 @media all and (max-width: 900px) {
@@ -439,6 +443,10 @@ section {
 .row {
   overflow-x: auto;
   width: 50rem;
+  /*  */
+  padding: 0;
+  margin: 0;
+  display: inline-block;
 }
 
 .row .column {

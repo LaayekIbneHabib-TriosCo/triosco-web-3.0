@@ -69,3 +69,13 @@ function showSlides(n) {
 }
 
 //
+const scrollable = document.querySelector(".center-slider-menu");
+const list = document.querySelector(".row");
+const items = document.querySelectorAll(".row div");
+const itemWidth = items[0].offsetWidth;
+let pos = 0;
+
+setInterval(() => {
+  pos = (pos + 1) % (items.length * itemWidth);
+  scrollable.scrollLeft = pos;
+}, 20);
