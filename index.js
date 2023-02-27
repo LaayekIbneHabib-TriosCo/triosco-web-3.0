@@ -358,3 +358,7 @@ function displayTelugu(event) {
   document.getElementById("lang-telugu").style.display = "block";
 }
 //
+
+document.querySelector(".burger-menu").addEventListener("click", () => {
+  window.navigator.vibrate(50);
+});
