@@ -70,39 +70,31 @@ if (window.innerWidth > 500) {
 // SECTION TITLES
 const sections = [
   {
-    class: ".section-3",
+    id: "#section-1",
     title: " | ABOUT US",
   },
   {
-    class: ".section-4",
+    id: "#section-2",
     title: " | CREATE",
   },
   {
-    class: ".section-5",
+    id: "#section-3",
     title: " | CONNECT",
   },
   {
-    class: ".section-6",
+    id: "#section-4",
     title: " | TRANSCEND",
   },
   {
-    class: ".section-7",
-    title: " | ABOUT OUR SERVICES",
-  },
-  {
-    class: ".section-8",
-    title: " | OUR CLIENTS",
-  },
-  {
-    class: ".section-9",
+    id: "#section-5",
     title: " | OUR TEAM",
   },
   {
-    class: ".section-10",
+    id: "#section-6",
     title: " | OUR BLOGS",
   },
   {
-    class: ".section-11",
+    id: "#section-7",
     title: " | CONTACT US",
   },
 ];
@@ -121,13 +113,13 @@ sections.forEach((section, index) => {
           //
         } else {
           document.querySelector(".section-title").innerHTML = "";
-          document.querySelector(icons).src = inactiveIcons;
+          document.getElementById(icons).src = inactiveIcons;
         }
       });
     },
     { threshold: 1 }
   );
-  observer.observe(document.querySelector(section.class));
+  observer.observe(document.querySelector(section.id));
 });
 // END
 
@@ -199,15 +191,13 @@ window.onmousewheel = document.onmousewheel = wheel;
 
 // CLICK TO ACTIVATE NAV BUTTONS
 const icons = [
-  ".about-us",
-  ".create",
-  ".connect",
-  ".transcend",
-  ".dot-one",
-  ".dot-two",
-  ".dot-three",
-  ".dot-four",
-  ".call",
+  "#about-us",
+  "#create",
+  "#connect",
+  "#transcend",
+  "#dot-one",
+  "#dot-two",
+  "#call",
 ];
 
 const activeIcons = [
@@ -215,8 +205,6 @@ const activeIcons = [
   "./resources/images/icons/create-active.png",
   "./resources/images/icons/connect-active.png",
   "./resources/images/icons/transcend-active.png",
-  "./resources/images/icons/circle-tab-active.png",
-  "./resources/images/icons/circle-tab-active.png",
   "./resources/images/icons/circle-tab-active.png",
   "./resources/images/icons/circle-tab-active.png",
   "./resources/images/icons/contact-active.png",
@@ -227,8 +215,6 @@ const inactiveIcons = [
   "./resources/images/icons/create-inactive.png",
   "./resources/images/icons/connect-inactive.png",
   "./resources/images/icons/transcend-inactive.png",
-  "./resources/images/icons/circle-tab-inactive.png",
-  "./resources/images/icons/circle-tab-inactive.png",
   "./resources/images/icons/circle-tab-inactive.png",
   "./resources/images/icons/circle-tab-inactive.png",
   "./resources/images/icons/contact-inactive.png",

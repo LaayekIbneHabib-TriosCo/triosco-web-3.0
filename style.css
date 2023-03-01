@@ -297,6 +297,7 @@ section {
   animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
   animation-iteration-count: 8;
   animation-delay: 4s;
+  rotate: 180deg;
 }
 
 .section-1 .swipe-up-arrow img {

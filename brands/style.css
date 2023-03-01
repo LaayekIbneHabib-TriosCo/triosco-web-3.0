@@ -167,6 +167,7 @@ header ul li a span {
   overflow-y: scroll;
   z-index: 1;
   animation: navAnimation 0.5s forwards;
+  display: none;
 }
 
 .nav::-webkit-scrollbar {
@@ -575,7 +576,7 @@ section {
 .container {
   max-width: 40%;
   margin: 2rem auto;
-  max-height: 55rem;
+  max-height: 75rem;
   overflow-y: scroll;
 }
 
@@ -603,4 +604,8 @@ section {
 .brand-icons h2 {
   font-size: 2rem;
   font-family: var(--primary-font);
+}
+
+.button-close {
+  display: none;
 }
