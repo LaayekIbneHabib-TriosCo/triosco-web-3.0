@@ -65,36 +65,36 @@ function myFunction() {
 if (window.innerWidth > 500) {
   myFunction();
 }
-//
+// END
 
-// SECTION TITLES
+// CHANGE SECTION TITLES AND LOGO STATE
 const sections = [
   {
-    id: "#section-1",
+    id: "#section-2",
     title: " | ABOUT US",
   },
   {
-    id: "#section-2",
+    id: "#section-3",
     title: " | CREATE",
   },
   {
-    id: "#section-3",
+    id: "#section-4",
     title: " | CONNECT",
   },
   {
-    id: "#section-4",
+    id: "#section-5",
     title: " | TRANSCEND",
   },
   {
-    id: "#section-5",
+    id: "#section-6",
     title: " | OUR TEAM",
   },
   {
-    id: "#section-6",
+    id: "#section-7",
     title: " | OUR BLOGS",
   },
   {
-    id: "#section-7",
+    id: "#section-8",
     title: " | CONTACT US",
   },
 ];
@@ -105,12 +105,10 @@ sections.forEach((section, index) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           document.querySelector(".section-title").innerHTML = section.title;
-          //
           icons.forEach((icon, i) => {
             document.querySelector(icon).src =
               i === index ? activeIcons[i] : inactiveIcons[i];
           });
-          //
         } else {
           document.querySelector(".section-title").innerHTML = "";
           document.getElementById(icons).src = inactiveIcons;
@@ -260,20 +258,20 @@ for (let i = 0; i < teamOverview.length; i++) {
     );
   }
 }
+// END
 
-//
-//
-function displayEnglish(event) {
+// CHANGE LANGUAGE
+function displayEnglish() {
   document.getElementById("lang-english").style.display = "block";
   document.getElementById("lang-german").style.display = "none";
   document.getElementById("lang-french").style.display = "none";
   document.getElementById("lang-hindi").style.display = "none";
-  document.getElementById("lang-gujarati").style.display = "none";
+  document.getElementById("lang-hindi").style.display = "none";
   document.getElementById("lang-spanish").style.display = "none";
   document.getElementById("lang-bengali").style.display = "none";
   document.getElementById("lang-telugu").style.display = "none";
 }
-function displayGerman(event) {
+function displayGerman() {
   document.getElementById("lang-english").style.display = "none";
   document.getElementById("lang-german").style.display = "block";
   document.getElementById("lang-french").style.display = "none";
@@ -283,7 +281,7 @@ function displayGerman(event) {
   document.getElementById("lang-bengali").style.display = "none";
   document.getElementById("lang-telugu").style.display = "none";
 }
-function displaySpanish(event) {
+function displaySpanish() {
   document.getElementById("lang-english").style.display = "none";
   document.getElementById("lang-german").style.display = "none";
   document.getElementById("lang-french").style.display = "none";
@@ -293,7 +291,7 @@ function displaySpanish(event) {
   document.getElementById("lang-bengali").style.display = "none";
   document.getElementById("lang-telugu").style.display = "none";
 }
-function displayFrench(event) {
+function displayFrench() {
   document.getElementById("lang-english").style.display = "none";
   document.getElementById("lang-german").style.display = "none";
   document.getElementById("lang-french").style.display = "block";
@@ -303,7 +301,7 @@ function displayFrench(event) {
   document.getElementById("lang-bengali").style.display = "none";
   document.getElementById("lang-telugu").style.display = "none";
 }
-function displayHindi(event) {
+function displayHindi() {
   document.getElementById("lang-english").style.display = "none";
   document.getElementById("lang-german").style.display = "none";
   document.getElementById("lang-french").style.display = "none";
@@ -313,7 +311,7 @@ function displayHindi(event) {
   document.getElementById("lang-bengali").style.display = "none";
   document.getElementById("lang-telugu").style.display = "none";
 }
-function displayGujarati(event) {
+function displayGujarati() {
   document.getElementById("lang-english").style.display = "none";
   document.getElementById("lang-german").style.display = "none";
   document.getElementById("lang-french").style.display = "none";
@@ -323,7 +321,7 @@ function displayGujarati(event) {
   document.getElementById("lang-bengali").style.display = "none";
   document.getElementById("lang-telugu").style.display = "none";
 }
-function displayBengali(event) {
+function displayBengali() {
   document.getElementById("lang-english").style.display = "none";
   document.getElementById("lang-german").style.display = "none";
   document.getElementById("lang-french").style.display = "none";
@@ -333,7 +331,7 @@ function displayBengali(event) {
   document.getElementById("lang-bengali").style.display = "block";
   document.getElementById("lang-telugu").style.display = "none";
 }
-function displayTelugu(event) {
+function displayTelugu() {
   document.getElementById("lang-english").style.display = "none";
   document.getElementById("lang-german").style.display = "none";
   document.getElementById("lang-french").style.display = "none";
@@ -343,8 +341,10 @@ function displayTelugu(event) {
   document.getElementById("lang-bengali").style.display = "none";
   document.getElementById("lang-telugu").style.display = "block";
 }
-//
+// END
 
+// VIBRATE WHEN CLICKED ON BURGER MENU
 document.querySelector(".burger-menu").addEventListener("click", () => {
   window.navigator.vibrate(50);
 });
+// END

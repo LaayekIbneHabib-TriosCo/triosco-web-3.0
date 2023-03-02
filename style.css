@@ -746,10 +746,10 @@ section {
   transition: 0.3s ease;
 }
 
-.lang-french,
+/* .lang-french,
 .lang-hindi {
   display: none;
-}
+} */
 
 .about-the-team a:hover {
   text-decoration: none;
