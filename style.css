@@ -288,7 +288,8 @@ section {
 
 .section-1 .swipe-up-arrow {
   position: relative;
-  top: 10rem;
+  /* top: 10rem; */
+  top: 8vh;
   width: 4rem;
   display: flex;
   align-self: center;
@@ -388,13 +389,14 @@ section {
 }
 
 .section-3 div article h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: var(--secondary-font);
   font-style: italic;
   text-shadow: 2px 5px 1px var(--text-shadow);
   color: var(--brown);
   font-weight: 500;
   line-height: 4.5rem;
+  margin-top: 2.5rem;
 }
 
 .section-3 div article h1 span {

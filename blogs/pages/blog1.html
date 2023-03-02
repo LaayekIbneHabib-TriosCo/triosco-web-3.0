@@ -380,16 +380,62 @@
                       alt=""
                     />
                   </li>
-                  <li>
-                    <img
-                      src="/resources/images/icons/facebook-circular-logo.png"
-                      alt=""
-                    />
-                  </li>
-                  <li>
-                    <img src="/resources/images/icons/twitter (1).png" alt="" />
-                  </li>
+                  <a
+                    href="http://www.facebook.com/sharer/sharer.php?s=100&
+p%5Btitle%5D=TITLE&p%5Bsummary%5D=DESC&p%5Burl%5D=
+URL&p%5Bimages%5D%5B0%5D=IMG_PATH"
+                    target="_blank"
+                    onclick="return Share.me(this);"
+                  >
+                    <li>
+                      <img
+                        src="/resources/images/icons/facebook-circular-logo.png"
+                        alt=""
+                      />
+                    </li>
+                  </a>
+                  <a
+                    href="https://twitter.com/intent/tweet?original_referer=
+http%3A%2F%2Ffiddle.jshell.net%2F_display%2F&text=TITLE&url
+=URL"
+                    target="_blank"
+                    onclick="return Share.me(this)"
+                  >
+                    <li>
+                      <img
+                        src="/resources/images/icons/twitter (1).png"
+                        alt=""
+                      />
+                    </li>
+                  </a>
                 </ul>
+
+                <script>
+                  Share = {
+                    facebook: function (purl, ptitle, pimg, text) {
+                      url = "http://www.facebook.com/sharer.php?s=100";
+                      url += "&p[title]=" + encodeURIComponent(ptitle);
+                      url += "&p[summary]=" + encodeURIComponent(text);
+                      url += "&p[url]=" + encodeURIComponent(purl);
+                      url += "&p[images][0]=" + encodeURIComponent(pimg);
+                      Share.popup(url);
+                    },
+                    twitter: function (purl, ptitle) {
+                      url = "http://twitter.com/share?";
+                      url += "text=" + encodeURIComponent(ptitle);
+                      url += "&url=" + encodeURIComponent(purl);
+                      url += "&counturl=" + encodeURIComponent(purl);
+                      Share.popup(url);
+                    },
+                    popup: function (url) {
+                      window.open(
+                        url,
+                        "",
+                        "toolbar=0,status=0,width=626, height=436"
+                      );
+                    },
+                  };
+                </script>
               </div>
               <div class="next-part">
                 <h3 class="heading">RELATED BLOGS</h3>
