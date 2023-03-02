@@ -1114,6 +1114,12 @@ section {
   margin-top: -10rem;
 }
 
+@media all and (min-width: 500px) {
+  .section-11 div .part-1 .address {
+    margin-left: 8rem;
+  }
+}
+
 .section-11 div .part-1 .address ul {
   list-style: none;
   display: flex;
