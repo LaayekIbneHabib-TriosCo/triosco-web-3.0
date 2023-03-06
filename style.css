@@ -451,6 +451,7 @@ section {
   .section-3 div article ul {
     display: flex;
     justify-content: left;
+    margin-bottom: 10rem;
   }
 
   .section-3 div article ul li img {
@@ -541,10 +542,7 @@ section {
   .services .slide {
     flex-direction: column;
     width: 100%;
-  }
-
-  .services .slide .item:hover {
-    flex: 11.5;
+    /* height: calc(100% - 10rem); */
   }
 
   .services .slide .item {
@@ -555,6 +553,11 @@ section {
     left: 0;
     display: flex;
     justify-content: center;
+    flex: 1;
+  }
+
+  .services .slide .item:hover {
+    flex: 11.5;
   }
 
   .services .slide .item h1 {
@@ -766,12 +769,12 @@ section {
 }
 
 .section-9 div ul li img {
-  width: 25rem;
+  width: 26rem;
   transition: 0.3s ease;
 }
 
 .section-9 div ul li img:hover {
-  width: 24rem;
+  width: 25rem;
 }
 
 .team-member-heading {
@@ -814,8 +817,8 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 52rem;
-  height: 33.8rem;
+  max-width: 60.1rem;
+  height: 39rem;
   background-image: url(/resources/images/Pop-Up\ Box.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -911,6 +914,10 @@ section {
   .section-9 div ul li img {
     width: 15rem;
   }
+
+  .section-9 div ul li img:hover {
+    width: 20rem;
+  }
 }
 
 @media all and (max-width: 900px) {
@@ -946,7 +953,7 @@ section {
   }
 
   .team-popup .p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-top: 1rem;
     font-weight: 600;
   }

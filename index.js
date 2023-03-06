@@ -233,6 +233,32 @@ icons.forEach((icon, i) => {
 // END
 
 // TEAM OVERVIEW
+// let teamOverview = document.querySelectorAll(".teamOverview");
+// let teamPopup = document.querySelectorAll(".team-popup");
+// let closePopup = document.querySelectorAll(".close-popup");
+
+// for (let i = 0; i < teamOverview.length; i++) {
+//   teamOverview[i].addEventListener(
+//     "click",
+//     (function (index) {
+//       return function () {
+//         teamPopup[index].style.display = "block";
+//       };
+//     })(i)
+//   );
+
+//   if (closePopup[i]) {
+//     closePopup[i].addEventListener(
+//       "click",
+//       (function (index) {
+//         return function () {
+//           teamPopup[index].style.display = "none";
+//         };
+//       })(i)
+//     );
+//   }
+// }
+
 let teamOverview = document.querySelectorAll(".teamOverview");
 let teamPopup = document.querySelectorAll(".team-popup");
 let closePopup = document.querySelectorAll(".close-popup");
@@ -242,7 +268,21 @@ for (let i = 0; i < teamOverview.length; i++) {
     "click",
     (function (index) {
       return function () {
-        teamPopup[index].style.display = "block";
+        // Check if any teamPopup is already displayed
+        let isPopupDisplayed = false;
+        for (let j = 0; j < teamPopup.length; j++) {
+          if (teamPopup[j].style.display === "block") {
+            isPopupDisplayed = true;
+            break;
+          }
+        }
+
+        // Display the new teamPopup only if there is no other teamPopup displayed
+        if (!isPopupDisplayed) {
+          teamPopup[index].style.display = "block";
+          teamOverview[index].style.border = "2px solid #f2b400";
+          // teamOverview[index].style.padding = "10px";
+        }
       };
     })(i)
   );
@@ -253,11 +293,14 @@ for (let i = 0; i < teamOverview.length; i++) {
       (function (index) {
         return function () {
           teamPopup[index].style.display = "none";
+          teamOverview[index].style.border = "none";
+          // teamOverview[index].style.padding = "0px";
         };
       })(i)
     );
   }
 }
+
 // END
 
 // CHANGE LANGUAGE
