@@ -1526,3 +1526,25 @@ section {
   }
 }
 /* END */
+
+.meet-our-team {
+  background-color: var(--yellow);
+  border: none;
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  margin: 1rem;
+  margin-left: 2.5vw;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border: 0.2rem solid var(--yellow);
+}
+
+.meet-our-team:hover {
+  background-color: transparent;
+  color: black;
+  border: 0.2rem solid var(--yellow);
+}

@@ -483,3 +483,13 @@ section {
     margin-left: 0px;
   }
 }
+
+#apple-logo {
+  margin-left: 8rem;
+}
+
+@media all and (max-width: 900px) {
+  #apple-logo {
+    margin-left: 0;
+  }
+}
