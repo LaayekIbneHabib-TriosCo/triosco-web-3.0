@@ -808,9 +808,49 @@ section {
   font-weight: 800;
 }
 
+/* SHREYA'S CODE START */
 .teamOverview {
   cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  margin-top: 2rem;
 }
+
+/* .teamOverview img {
+  width: auto;
+  max-width: 30rem; 
+} */
+
+.team-member-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--brown);
+  font-family: var(--primary-font);
+  margin-bottom: -1rem;
+  text-shadow: 2px 3px 1px var(--text-shadow);
+  
+}
+
+.team-member-designation {
+  font-size: 2rem;
+  text-align: center;
+  font-family: var(--primary-font);
+  color: var(--yellow);
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .team-member-name{
+    font-size: 1.5rem;
+  }
+  .team-member-designation{
+    font-size: 1rem;
+  }
+ 
+}
+
+/* SHREYA'S CODE END */
 
 .team-popup {
   position: absolute;
