@@ -529,14 +529,14 @@ section {
   position: absolute;
 }
 
-/* @keyframes bounce {
+@keyframes bounce {
   from {
     transform: translate3d(0, 0, 0);
   }
   to {
     transform: translate3d(0, -25rem, 0);
   }
-} */
+}
 
 .brand-carousel {
   width: 800px;
