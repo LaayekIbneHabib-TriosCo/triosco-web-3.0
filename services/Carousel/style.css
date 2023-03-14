@@ -1,0 +1,78 @@
+.carousel {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+#big .brand {
+  background: #f2b400;
+  margin: 2px;
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#thumbs .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  line-height: 70px;
+  padding: 0px;
+  margin: 2px;
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#thumbs .brand img {
+  width: 120px;
+}
+
+@media all and (max-width: 700px) {
+  #thumbs .brand img {
+    width: 60px;
+  }
+}
+
+#thumbs .current .brand {
+  background: rgba(242, 180, 0, 0.3);
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.owl-theme .owl-nav [class*="owl-"].disabled:hover {
+  background-color: #d6d6d6;
+}
+
+#big.owl-theme {
+  position: relative;
+}
+
+#big.owl-theme .owl-next,
+#big.owl-theme .owl-prev {
+  background: #502721;
+  width: 22px;
+  line-height: 40px;
+  height: 40px;
+  margin-top: -20px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+}
+
+#big.owl-theme .owl-prev {
+  left: 10px;
+}
+
+#big.owl-theme .owl-next {
+  right: 10px;
+}
+
+#thumbs.owl-theme .owl-next,
+#thumbs.owl-theme .owl-prev {
+  background: #502721;
+}
