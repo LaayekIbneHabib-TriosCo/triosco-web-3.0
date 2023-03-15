@@ -73,45 +73,18 @@ body {
   /* background-image: url(/resources/images/background.png); */
 }
 
-.disclamer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  display: none;
-}
-
-.disclamer h1 {
-  font-family: var(--primary-font);
-  font-size: 2rem;
-  text-align: center;
-  color: var(--brown);
-}
-
-/* @media all and (max-width: 374px), (max-height: 635px) {
-  .disclamer {
-    display: block;
-  }
-} */
-
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   margin: 0 1rem 0;
 }
 
-/* @media all and (max-width: 374px), (max-height: 635px) {
-  .flex-container {
-    display: none;
-  }
-} */
-
 header {
   height: 6rem;
   width: 100vw;
   z-index: 1;
   background-color: var(--white);
+  display: none;
 }
 
 header ul {
