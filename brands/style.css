@@ -350,6 +350,7 @@ section {
   font-family: var(--secondary-font);
   /* white-space: nowrap; */
   /* overflow-x: hidden; */
+  text-align: left;
 }
 
 .brand-about {
@@ -556,7 +557,7 @@ section {
 @media all and (max-width: 900px) {
   .container {
     max-width: 100%;
-    margin-top: -15rem;
+    margin-top: -10rem;
     margin-right: -1.5rem;
     overflow-y: visible;
   }
