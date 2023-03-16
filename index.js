@@ -233,85 +233,23 @@ icons.forEach((icon, i) => {
 // END
 
 // CHANGE LANGUAGE
-function displayEnglish() {
-  document.getElementById("lang-english").style.display = "block";
-  document.getElementById("lang-german").style.display = "none";
-  document.getElementById("lang-french").style.display = "none";
-  document.getElementById("lang-hindi").style.display = "none";
-  document.getElementById("lang-hindi").style.display = "none";
-  document.getElementById("lang-spanish").style.display = "none";
-  document.getElementById("lang-bengali").style.display = "none";
-  document.getElementById("lang-telugu").style.display = "none";
-}
-function displayGerman() {
-  document.getElementById("lang-english").style.display = "none";
-  document.getElementById("lang-german").style.display = "block";
-  document.getElementById("lang-french").style.display = "none";
-  document.getElementById("lang-hindi").style.display = "none";
-  document.getElementById("lang-gujarati").style.display = "none";
-  document.getElementById("lang-spanish").style.display = "none";
-  document.getElementById("lang-bengali").style.display = "none";
-  document.getElementById("lang-telugu").style.display = "none";
-}
-function displaySpanish() {
-  document.getElementById("lang-english").style.display = "none";
-  document.getElementById("lang-german").style.display = "none";
-  document.getElementById("lang-french").style.display = "none";
-  document.getElementById("lang-hindi").style.display = "none";
-  document.getElementById("lang-gujarati").style.display = "none";
-  document.getElementById("lang-spanish").style.display = "block";
-  document.getElementById("lang-bengali").style.display = "none";
-  document.getElementById("lang-telugu").style.display = "none";
-}
-function displayFrench() {
-  document.getElementById("lang-english").style.display = "none";
-  document.getElementById("lang-german").style.display = "none";
-  document.getElementById("lang-french").style.display = "block";
-  document.getElementById("lang-hindi").style.display = "none";
-  document.getElementById("lang-gujarati").style.display = "none";
-  document.getElementById("lang-spanish").style.display = "none";
-  document.getElementById("lang-bengali").style.display = "none";
-  document.getElementById("lang-telugu").style.display = "none";
-}
-function displayHindi() {
-  document.getElementById("lang-english").style.display = "none";
-  document.getElementById("lang-german").style.display = "none";
-  document.getElementById("lang-french").style.display = "none";
-  document.getElementById("lang-hindi").style.display = "block";
-  document.getElementById("lang-gujarati").style.display = "none";
-  document.getElementById("lang-spanish").style.display = "none";
-  document.getElementById("lang-bengali").style.display = "none";
-  document.getElementById("lang-telugu").style.display = "none";
-}
-function displayGujarati() {
-  document.getElementById("lang-english").style.display = "none";
-  document.getElementById("lang-german").style.display = "none";
-  document.getElementById("lang-french").style.display = "none";
-  document.getElementById("lang-hindi").style.display = "none";
-  document.getElementById("lang-gujarati").style.display = "block";
-  document.getElementById("lang-spanish").style.display = "none";
-  document.getElementById("lang-bengali").style.display = "none";
-  document.getElementById("lang-telugu").style.display = "none";
-}
-function displayBengali() {
-  document.getElementById("lang-english").style.display = "none";
-  document.getElementById("lang-german").style.display = "none";
-  document.getElementById("lang-french").style.display = "none";
-  document.getElementById("lang-hindi").style.display = "none";
-  document.getElementById("lang-gujarati").style.display = "none";
-  document.getElementById("lang-spanish").style.display = "none";
-  document.getElementById("lang-bengali").style.display = "block";
-  document.getElementById("lang-telugu").style.display = "none";
-}
-function displayTelugu() {
-  document.getElementById("lang-english").style.display = "none";
-  document.getElementById("lang-german").style.display = "none";
-  document.getElementById("lang-french").style.display = "none";
-  document.getElementById("lang-hindi").style.display = "none";
-  document.getElementById("lang-gujarati").style.display = "none";
-  document.getElementById("lang-spanish").style.display = "none";
-  document.getElementById("lang-bengali").style.display = "none";
-  document.getElementById("lang-telugu").style.display = "block";
+function displayLanguage(language) {
+  const languages = [
+    "english",
+    "german",
+    "french",
+    "hindi",
+    "gujarati",
+    "spanish",
+    "bengali",
+    "telugu",
+  ];
+
+  for (let i = 0; i < languages.length; i++) {
+    const lang = languages[i];
+    const display = lang === language ? "block" : "none";
+    document.getElementById(`lang-${lang}`).style.display = display;
+  }
 }
 // END
 
