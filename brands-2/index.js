@@ -31,3 +31,9 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
 }
+
+// back functionality
+
+document.querySelector(".back-btn").addEventListener("click", () => {
+  window.history.back();
+});
