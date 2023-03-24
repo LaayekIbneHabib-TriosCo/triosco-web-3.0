@@ -212,7 +212,7 @@ header ul li a .section-title {
 }
 
 .nav ul li .dot {
-  width: 0.8rem;
+  width: 2.2rem;
 }
 
 @media all and (max-width: 900px) {
@@ -592,7 +592,7 @@ section {
 
 /* SECTION 5 */
 .section-5 .slide .item:first-of-type {
-  background-image: url("/resources/images/Research.jpg");
+  background-image: url("/resources/images/Research&Consultancy.jpg");
 }
 
 .section-5 .slide .item:nth-of-type(2) {
@@ -614,7 +614,7 @@ section {
 }
 
 .section-6 .slide .item:last-of-type {
-  background-image: url("/resources/images/Growth.jpg");
+  background-image: url("/resources/images/Growth\ Optimization.jpg");
 }
 /* END */
 
@@ -1164,6 +1164,7 @@ section {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+
   margin-top: 3rem;
 }
 
@@ -1309,6 +1310,8 @@ section {
   color: var(--yellow);
   font-size: 3rem;
   font-weight: 800;
+
+  /* margin-top:3rem; */
 }
 
 .section-11 div .part-1 .form p {
@@ -1378,7 +1381,8 @@ section {
 
 .section-11 div .part-2 .footer {
   background-color: var(--yellow);
-  height: 30rem;
+
+  /* height: 30rem; */
   background: url(/resources/images/imageedit_1_4684959322.png);
   z-index: 9;
   display: flex;
@@ -1474,6 +1478,11 @@ section {
   margin-top: -5rem;
 }
 
+.section-11 div .part-2 .footer div .other-links ul{
+  display: flex;
+  gap: 8rem; 
+}
+
 @media all and (max-width: 900px) {
   .section-11 div .part-2 .footer div .other-links ul li {
     text-align: left;
@@ -1496,7 +1505,9 @@ section {
   color: var(--white);
   font-family: var(--primary-font);
   font-size: 1.6rem;
-  font-weight: 300;
+
+  font-weight: 500;
+  line-height: 3.5rem;
 }
 
 .section-11 div .part-2 .footer .copyright {
@@ -1509,6 +1520,9 @@ section {
   font-family: var(--primary-font);
   font-size: 1.6rem;
   font-weight: 400;
+
+  margin-top: -7rem;
+  margin-left: 40rem;
 }
 
 @media all and (max-width: 900px) {
@@ -1584,9 +1598,34 @@ section {
     margin-top: 5rem;
     text-align: center;
   }
+
+  /* SHREYA'S CODE START */
+  .section-11 div .part-2 .footer{
+    height: 50rem;
+  }
+
+  .section-11 div .part-2 .footer div .other-links ul{
+    flex-wrap: wrap;
+  }
+
+  .section-11 div .part-2 .footer .copyright p{
+    margin: auto;
+    margin-top: -7rem;
+  }
 }
 /* END */
 
+@media all and (max-width: 600px){
+  .section-11 div .part-2 .footer div .other-links ul{
+    display: block;
+  }
+  .section-11 div .part-2 .footer{
+    height: 60rem;
+  }
+}
+
+
+/* SHREYA'S CODE END */
 .meet-our-team {
   background-color: var(--yellow);
   border: none;

@@ -1,6 +1,18 @@
+html, body {
+  height: 100%;
+  /* margin: 0;
+  padding: 0; */
+  /* overflow: hidden; */
+}
+
 .carousel {
   margin: 0 auto;
-  max-width: 800px;
+  /* max-width: 800px; */
+
+  max-width: 500px;
+  height: 100%;
+  overflow: hidden;
+  /* height: 100vh; */
 }
 
 #big .brand {

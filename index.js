@@ -203,8 +203,8 @@ const activeIcons = [
   "./resources/images/icons/create-active.png",
   "./resources/images/icons/connect-active.png",
   "./resources/images/icons/transcend-active.png",
-  "./resources/images/icons/circle-tab-active.png",
-  "./resources/images/icons/circle-tab-active.png",
+  "./resources/images/icons/Team Active.png",
+  "./resources/images/icons/Blog Active.png",
   "./resources/images/icons/contact-active.png",
 ];
 
@@ -213,8 +213,8 @@ const inactiveIcons = [
   "./resources/images/icons/create-inactive.png",
   "./resources/images/icons/connect-inactive.png",
   "./resources/images/icons/transcend-inactive.png",
-  "./resources/images/icons/circle-tab-inactive.png",
-  "./resources/images/icons/circle-tab-inactive.png",
+  "./resources/images/icons/Team InActive.png",
+  "./resources/images/icons/Blog InActive.png",
   "./resources/images/icons/contact-inactive.png",
 ];
 
@@ -258,3 +258,13 @@ document.querySelector(".burger-menu").addEventListener("click", () => {
   window.navigator.vibrate(50);
 });
 // END
+
+// if (window.innerWidth < 768) {
+//   var items = document.querySelectorAll(".item");
+//   for (var i = 0; i < items.length; i++) {
+//     var item = items[i];
+//     item.removeAttribute("onclick");
+//   }
+// }
+
+

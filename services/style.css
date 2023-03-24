@@ -202,7 +202,7 @@ header ul li a span {
 }
 
 .nav ul li .dot {
-  width: 0.8rem;
+  width: 2.2rem;
 }
 
 @media all and (min-width: 900px) {
@@ -278,7 +278,7 @@ section {
 }
 
 .connect .slide .item-1 {
-  background-image: url("/resources/images/Research\ 1.jpg");
+  background-image: url("/resources/images/Research&Consultancy.jpg");
 }
 
 .connect .slide .item-2 {
@@ -298,7 +298,7 @@ section {
 }
 
 .transcend .slide .item-3 {
-  background-image: url("/resources/images/Growth\ 1.jpg");
+  background-image: url("/resources/images/Growth\ Optimization\ 1.jpg");
 }
 
 .section .slide .item h1 {
@@ -337,7 +337,7 @@ section {
   height: calc(100vh - 9.3rem);
   width: 100%;
   overflow-x: hidden;
-  padding: 3rem;
+  /* padding: 3rem; */
 }
 
 .section .slide .item .wrapper .content h2 {
@@ -540,5 +540,5 @@ section {
 
 .brand-carousel {
   width: 100%;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 }
