@@ -606,7 +606,7 @@ section {
 
 /* SECTION 6 */
 .section-6 .slide .item:first-of-type {
-  background-image: url("/resources/images/Data.jpg");
+  background-image: url("/resources/images/Data-Analytics.gif");
 }
 
 .section-6 .slide .item:nth-of-type(2) {
@@ -829,7 +829,6 @@ section {
   font-family: var(--primary-font);
   margin-bottom: -1rem;
   text-shadow: 2px 3px 1px var(--text-shadow);
-  
 }
 
 .team-member-designation {
@@ -841,13 +840,12 @@ section {
 }
 
 @media screen and (max-width: 900px) {
-  .team-member-name{
+  .team-member-name {
     font-size: 1.5rem;
   }
-  .team-member-designation{
+  .team-member-designation {
     font-size: 1rem;
   }
- 
 }
 
 /* SHREYA'S CODE END */
@@ -1478,9 +1476,9 @@ section {
   margin-top: -5rem;
 }
 
-.section-11 div .part-2 .footer div .other-links ul{
+.section-11 div .part-2 .footer div .other-links ul {
   display: flex;
-  gap: 8rem; 
+  gap: 8rem;
 }
 
 @media all and (max-width: 900px) {
@@ -1600,30 +1598,29 @@ section {
   }
 
   /* SHREYA'S CODE START */
-  .section-11 div .part-2 .footer{
+  .section-11 div .part-2 .footer {
     height: 50rem;
   }
 
-  .section-11 div .part-2 .footer div .other-links ul{
+  .section-11 div .part-2 .footer div .other-links ul {
     flex-wrap: wrap;
   }
 
-  .section-11 div .part-2 .footer .copyright p{
+  .section-11 div .part-2 .footer .copyright p {
     margin: auto;
     margin-top: -7rem;
   }
 }
 /* END */
 
-@media all and (max-width: 600px){
-  .section-11 div .part-2 .footer div .other-links ul{
+@media all and (max-width: 600px) {
+  .section-11 div .part-2 .footer div .other-links ul {
     display: block;
   }
-  .section-11 div .part-2 .footer{
+  .section-11 div .part-2 .footer {
     height: 60rem;
   }
 }
-
 
 /* SHREYA'S CODE END */
 .meet-our-team {
