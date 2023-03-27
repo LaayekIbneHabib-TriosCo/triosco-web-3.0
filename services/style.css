@@ -355,6 +355,20 @@ section {
   width: 50%;
   float: right;
   padding-top: 7rem;
+  /*  */
+  animation: bounce 0.6s;
+  animation-direction: alternate;
+  animation-iteration-count: 4;
+  animation-delay: 4s;
+}
+
+@keyframes bounce {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: -10rem;
+  }
 }
 
 .section .slide .item .content:first-of-type .left-qoute {
