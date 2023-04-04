@@ -1509,7 +1509,7 @@ section {
 }
 
 .section-11 div .part-2 .footer .copyright {
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 .section-11 div .part-2 .footer .copyright p {
@@ -1519,7 +1519,7 @@ section {
   font-size: 1.6rem;
   font-weight: 400;
 
-  margin-top: -7rem;
+  margin-top: -4rem;
   margin-left: 40rem;
 }
 
@@ -1599,7 +1599,7 @@ section {
 
   /* SHREYA'S CODE START */
   .section-11 div .part-2 .footer {
-    height: 50rem;
+    height: 40rem;
   }
 
   .section-11 div .part-2 .footer div .other-links ul {
@@ -1643,4 +1643,22 @@ section {
   background-color: transparent;
   color: black;
   border: 0.2rem solid var(--yellow);
+}
+
+/*
+footer
+*/
+
+.part-2 {
+  height: 20rem !important;
+  margin-top: 20rem !important;
+  margin-bottom: -10rem !important;
+}
+
+.part-2 .footer .box {
+  margin-top: -17.7rem !important;
+}
+
+.other-links ul li a {
+  font-size: 2rem !important;
 }

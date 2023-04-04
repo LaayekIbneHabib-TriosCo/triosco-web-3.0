@@ -266,5 +266,3 @@ document.querySelector(".burger-menu").addEventListener("click", () => {
 //     item.removeAttribute("onclick");
 //   }
 // }
-
-
