@@ -862,6 +862,7 @@ section {
   background-size: cover;
   font-family: var(--primary-font);
   /*  */
+  overflow-y: scroll;
   display: none;
 }
 
