@@ -1662,3 +1662,23 @@ footer
 .other-links ul li a {
   font-size: 2rem !important;
 }
+
+@media all and (max-width: 900px) {
+  .part-2 {
+    height: 45rem !important;
+    margin-top: 20rem !important;
+    margin-bottom: -10rem !important;
+  }
+
+  .part-2 .footer .box {
+    margin-top: -25rem !important;
+  }
+
+  .other-links {
+    margin-bottom: 6rem;
+  }
+
+  .other-links ul li a {
+    font-size: 2rem !important;
+  }
+}

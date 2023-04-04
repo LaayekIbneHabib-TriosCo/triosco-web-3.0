@@ -4,14 +4,14 @@ function toggleNav() {
   const button_close = document.getElementById("button-close");
   const nav = document.querySelector(".nav");
 
-  if (nav.style.display === "none") {
-    nav.style.display = "block";
-    button_open.style.display = "none";
-    button_close.style.display = "block";
-  } else {
+  if (nav.style.display === "block") {
     nav.style.display = "none";
     button_open.style.display = "block";
     button_close.style.display = "none";
+  } else {
+    nav.style.display = "block";
+    button_open.style.display = "none";
+    button_close.style.display = "block";
   }
 }
 
