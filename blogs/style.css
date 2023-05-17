@@ -307,6 +307,10 @@ section {
   font-weight: 800;
 }
 
+/* .part-1 .blog6-video {
+  margin: 0 4rem 0 4rem;
+} */
+
 .part-2 {
   display: flex;
   flex-direction: column;
@@ -491,5 +495,16 @@ section {
 @media all and (max-width: 900px) {
   #apple-logo {
     margin-left: 0;
+  }
+}
+
+/* 
+ */
+
+@media all and (max-width: 600px) {
+  iframe {
+    max-width: 99% !important;
+    display: block;
+    margin: auto;
   }
 }
